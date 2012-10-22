@@ -62,7 +62,7 @@ text-decoration:underline;
 
 
 ul li.image-button{
-    background-image: url('./images/expand.png');
+    background-image: url('images/expand.png');
 	background-repeat: no-repeat;
 	height: 16px;
    
