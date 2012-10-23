@@ -203,20 +203,23 @@ function expandDocument(id){
 			else{
 				if(isBinaryDoc !=0)
 				{
-					documentdata +='<div>Description:'+response.data.content.binary.description+'';
-					documentdata +='This Link contains Binary content. Please click below link to open the document</p>';
+					documentdata +='<div class="rootborder">Description:'+response.data.content.binary.description+'';
+					documentdata +='This Link contains Binary content. Please click below link to open the document';
 					documentdata +='<a class="nopad" href='+response.data.resources.html.ref+' target="_apps">'+response.data.content.binary.name+'</a>';
 					documentdata +='</div>';
 				}
 				else
 				{
 					
-					documentdata +='<div class="answerborder">';
-					documentdata +='<ul>';
+					documentdata +='<div class="rootborder">';					
 					documentdata +='<li class="align">'+response.data.subject+'</li>';
+					documentdata +='<div>';					
+					documentdata +='<ul>';
+					documentdata +='<li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
+					documentdata +='</li>';
                                         documentdata +='</ul>'; 
-                                        documentdata +='<div>';
+                                        
 				}
 			}
 			$(".content").show();
