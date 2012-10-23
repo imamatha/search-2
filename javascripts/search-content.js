@@ -121,7 +121,7 @@ function expandDiscussion(id){
 									correctanswer +='<div class="answerborder">';
 									correctanswer +='<ul>';
 									correctanswer +='<div class="correct">Correct Answer</div> ';
-									correctanswer +='<div class="root">by&nbsp;';
+									correctanswer +='<div class="root1">by&nbsp;';
 									correctanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									correctanswer +='&nbsp;on&nbsp; ' + newDate+ '</div>';
 									correctanswer +='<div class="root">'+row.content.text+ '</div	>';
@@ -140,7 +140,7 @@ function expandDiscussion(id){
 									helfulanswer +='<div class="answerborder">';
 									helfulanswer +='<ul>';
 									helfulanswer +='<div class="helpful">Helpful Answer </div>';
-									helfulanswer +='<div>by &nbsp;';
+									helfulanswer +='<div class="root1">by &nbsp;';
 									helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									helfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
 									helfulanswer +='<div class="root">'+row.content.text+ '</div>';
