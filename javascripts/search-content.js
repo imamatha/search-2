@@ -87,15 +87,19 @@ function expandDiscussion(id){
 		}
 		else{
 			
-			
+			myDate=row.creationDate.substr(0,10);                  
+			myDate=myDate.split("-"); 
+			dateM=myDate[1];
+			var finalMonth=monthConvert(dateM);
+			var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 		        console.log("I'm inside Root Message Div");
 		        rootmessage +='<div class="rootborder">';
 			rootmessage +='<ul>';
 			rootmessage +='<div ><a href="'+discussionresult.messages.root.resources.html.ref+'" target="_apps">'+discussionresult.messages.root.subject+'</a></div>';
-				
+			rootmessage +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';	
 			rootmessage +='<div class="root">';
                 	rootmessage +='<ul>';                   
-                	rootmessage +='<div class="align">'+discussionresult.messages.root.content.text+'</div>';                  
+                	rootmessage +=+discussionresult.messages.root.content.text+;                  
                 	rootmessage +='</ul>';
                 	rootmessage +='</div>';
 				
