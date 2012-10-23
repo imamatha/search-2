@@ -279,11 +279,14 @@ function expandBlog(blogId, blogpostId){
 							console.log("Error in get: "+response.error.message);
 							}
 							else{
-							documentdata +='<div>';
-							documentdata +='<ul>';
-							documentdata +='<li>'+response.data.subject+'</a></li>';
-							documentdata +='<div class="root">'+response.data.content.text +'</div>';
-							documentdata +='</ul>';
+							documentdata +='<div class="rootborder">';
+							documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
+							documentdata += response.data.subject+'</a></span>';
+							documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
+							documentdata +='</div>';
+							
+							documentdata +='<div class="answerborder">';
+							documentdata +='<span class="root">'+response.data.content.text +'</span></div>';	
 							}
 							$(".content").show();
 							$(".content").html(documentdata);
