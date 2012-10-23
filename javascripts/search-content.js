@@ -144,7 +144,7 @@ function expandDiscussion(id){
 									//helfulanswer +='<div>by &nbsp;';
 									//helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									helpfulanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
-									helpfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
+									//helpfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
 									helpfulanswer +='<div class="root">'+row.content.text+ '</div>';
 									helpfulanswer +='</ul>';
 									helpfulanswer +='</div>';
