@@ -88,19 +88,19 @@ function expandDiscussion(id){
 		else{
 			
 			
-				console.log("I'm inside Root Message Div");
-				rootmessage +='<div class="rootborder">';
-				rootmessage +='<ul>';
-				rootmessage +='<div ><a href="'+discussionresult.messages.root.resources.html.ref+'" target="_apps">'+discussionresult.messages.root.subject+'</a></div>';
+		        console.log("I'm inside Root Message Div");
+		        rootmessage +='<div class="rootborder">';
+			rootmessage +='<ul>';
+			rootmessage +='<div ><a href="'+discussionresult.messages.root.resources.html.ref+'" target="_apps">'+discussionresult.messages.root.subject+'</a></div>';
 				
-				rootmessage +='<div class="root">';
-                rootmessage +='<ul>';                   
-                rootmessage +='<div class="align">'+discussionresult.messages.root.content.text+'</div>';                  
-                rootmessage +='</ul>';
-                rootmessage +='</div>';
+			rootmessage +='<div class="root">';
+                	rootmessage +='<ul>';                   
+                	rootmessage +='<div class="align">'+discussionresult.messages.root.content.text+'</div>';                  
+                	rootmessage +='</ul>';
+                	rootmessage +='</div>';
 				
-				rootmessage +='</ul>';
-				rootmessage +='</div>';
+			rootmessage +='</ul>';
+			rootmessage +='</div>';
 			
 			
 			var request = response.data.messages.get( ) ;
@@ -229,10 +229,6 @@ function search() {
 	$(".content").html("");
 	$(".content").hide();
     gadgets.window.adjustHeight();
-   /* var types = [];
-    $("input:checked").each(function() {
-        types.push(this.id);
-    });*/
     var params = {
         //limit : $("#limit").val(),
         query : $("#query").val(),
@@ -243,9 +239,6 @@ function search() {
     };
 
    
-   /* if (types.length > 0) {
-        params.type = types;
-    }*/
     console.log("searching for " + JSON.stringify(params));
     osapi.jive.core.searches.searchContent(params).execute(function(response) {
        console.log("searching response is " + JSON.stringify(response));
@@ -275,10 +268,7 @@ function search() {
             var myDate="";
 			var isAnswered = 0;
 			var isQuestion = 0
-           // var str="";
-
-            
-            
+         
             $.each(rows, function(index, row) {
             	url=row.resources.html.ref;
 				subject=row.subject;
@@ -321,108 +311,108 @@ function search() {
 				var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 
 
-               if(row.type=="discussion")
-               	{
-					var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
-					var discussionImage="";
-					if(isQuestion)
-						{
-							if(isAnswered != 0){
-								discussionImage +='<span class="jive-icon-med jive-icon-discussion-correct"></span>';
+                         if(row.type=="discussion")
+               	           {
+				var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
+				var discussionImage="";
+				if(isQuestion)
+				{
+				if(isAnswered != 0){
+				discussionImage +='<span class="jive-icon-med jive-icon-discussion-correct"></span>';
 								
-							}
-							else
-							{
-								discussionImage +='<span class="jive-icon-med jive-icon-discussion-question"></span>';
-							}
-						}
-						else
-						{
-							discussionImage +='<span class="jive-icon-med jive-icon-discussion"></span>';
-						}
+				 }
+				 else
+				 {
+				  discussionImage +='<span class="jive-icon-med jive-icon-discussion-question"></span>';
+				  }						
+				}
 						
+		             else
+				{
+				  discussionImage +='<span class="jive-icon-med jive-icon-discussion"></span>';
+				}
+				
+                    		discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
+				discussion +='<ul>';
+				discussion +=discussionImage+'<li><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+				discussion +='<li class="image-button" id="'+discussionID+'"></li>';
+                    		discussion +='</ul>'; 
 					
-               	     
-                    discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
-					discussion +='<ul>';
-					discussion +=discussionImage+'<li><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-					discussion +='<li class="image-button" id="'+discussionID+'"></li>';
-                    discussion +='</ul>'; 
+				discussion +='<div class="root1">';  
+                    		discussion +='<ul>';                   
+                    		discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+				discussion +='<li>Date:'+newDate+'</li>';                    
+                    		discussion +='<li>Replies:'+replyCount+'</li>'; 
+                    		discussion +='</ul>';
+				discussion +='</div>';
 					
-					discussion +='<div class="root1">';  
-                    discussion +='<ul>';                   
-                    discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-					discussion +='<li>Date:'+newDate+'</li>';                    
-                    discussion +='<li>Replies:'+replyCount+'</li>'; 
-                    discussion +='</ul>';
-					discussion +='</div>';
-					
-					discussion +='<div class="root">';
-                    discussion +='<ul>';                   
-                    discussion +='<div class="align">'+contentSummary+'</div>';                  
-                    discussion +='</ul>';
-					discussion +='</div>';
+				discussion +='<div class="root">';
+                                discussion +='<ul>';                   
+                   		discussion +='<div class="align">'+contentSummary+'</div>';                  
+                    	        discussion +='</ul>';
+				discussion +='</div>';
 					                
-					discussion +='</div>';
-                  
-                                     
-               }
+				discussion +='</div>';
+				discussion +='<br>';                
+                           }
                
-			  if(row.type=="document")
-               {
+               
+			 if(row.type=="document")
+                           {
 				var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
-                    document +='<div id="div_'+docID+'" class="firstdiv"> ';
-					document +='<ul>';
-                    document +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
-					document +='<li class="image-button" id="DOC-'+docID+'" ></li>';
-                    document +='</ul>';
+                    		document +='<div id="div_'+docID+'" class="firstdiv"> ';
+				document +='<ul>';
+                    		document +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
+				document +='<li class="image-button" id="DOC-'+docID+'" ></li>';
+                    		document +='</ul>';
                     
-					document +='<div class="root1">'; 
-                    document +='<ul>';
-                    document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-					document +='<li>Date:'+newDate+'</li>';                  
-                    document +='<li>Replies:'+replyCount+'</li>';
-                    document +='</ul>';
-                    document +='</div>';
+				document +='<div class="root1">'; 
+                    		document +='<ul>';
+                   		document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+				document +='<li>Date:'+newDate+'</li>';                  
+                    		document +='<li>Replies:'+replyCount+'</li>';
+                   	 	document +='</ul>';
+                    		document +='</div>';
 					
-					document +='<div class="root">';
-                    document +='<ul>';                    
-                    document +='<div class="align">'+contentSummary+'</div>';                   
-                    document +='</ul>';
-					document +='</div>';
+				document +='<div class="root">';
+                    		document +='<ul>';                    
+                    		document +='<div class="align">'+contentSummary+'</div>';                   
+                    		document +='</ul>';
+				document +='</div>';
                                        
-                    document +='</div>';
+                    		document +='</div>';
+                    		document +='<br>';
                       
-                  
-               }
-			   if(row.type=="post")
-               {
-                    post +='<div>';
-					post +='<ul>';
-                    post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-                    post +='</ul>';
+                         }
+               
+		       if(row.type=="post")
+                          {
+                    	  post +='<div>';
+			  post +='<ul>';
+                          post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                          post +='</ul>';
                     
-					post +='<div class="root1">'; 
-                    post +='<ul>';
-					post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-					post +='<li>Date:'+newDate+'</li>';                  
-                    post +='<li>Replies:'+replyCount+'</li>'; 
-                    post +='</ul>';
-					post +='</div>';
+		     	 post +='<div class="root1">'; 
+                         post +='<ul>';
+			 post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+			 post +='<li>Date:'+newDate+'</li>';                  
+                         post +='<li>Replies:'+replyCount+'</li>'; 
+                         post +='</ul>';
+			 post +='</div>';
 					
-					post +='<div class="root">';    
-					post +='<ul>';  
-                    post +='<div class="align">'+contentSummary+'</div>';  
-                    post +='</ul>';
-					post +='</div>'; 
+			 post +='<div class="root">';    
+			 post +='<ul>';  
+                         post +='<div class="align">'+contentSummary+'</div>';  
+                         post +='</ul>';
+			 post +='</div>'; 
                                     
-                    post +='</div>';                
-                   
+                         post +='</div>';          
+                         post +='<br>';              
                }
                                   
             });
                        
-            html +=discussion;
+                        html +=discussion;
 			html +=document;
 			html +=post;
 				
