@@ -126,6 +126,15 @@ background-color:white;
 {
  font-size:14px;
 }
+
+.subtext
+{
+ color: blue;
+ font-size:12px;
+ font-family:"Times New Roman";
+ line-height: 1.5em; 
+}
+
 .withborder {
        border: 1px solid black;
        /* position:absolute;*/
