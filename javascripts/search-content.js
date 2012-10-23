@@ -213,9 +213,10 @@ function expandDocument(id){
 					
 					documentdata +='<div class="answerborder">';
 					documentdata +='<ul>';
-					documentdata +='<li><h4>'+response.data.subject+'</h4></li>';
+					documentdata +='<li>'+response.data.subject+'</li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
                                         documentdata +='</ul>'; 
+                                        documentdata +='<div>';
 				}
 			}
 			$(".content").show();
