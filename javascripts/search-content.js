@@ -213,12 +213,14 @@ function expandDocument(id){
 					
 					documentdata +='<div class="rootborder">';					
 					documentdata +='<div class="align">'+response.data.subject+'</div>';
-					documentdata +='</div>';					
-					documentdata +='<ul>';
+					documentdata +='</div>';
+					documentdata +='<div class="answerborder">';
+			
 					documentdata +='<li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
 					documentdata +='</li>';
-                                        documentdata +='</ul>'; 
+                                       
+                                        documentdata +='</div>';
                                         
 				}
 			}
