@@ -107,7 +107,7 @@ background-color:white;
 {
  font-size:12px;
  color:#686868;
- margin-left:0.7cm;
+ margin-left:0.5cm;
  }
  
 .correct
@@ -159,9 +159,9 @@ sets border width on all sides*/
 
 .align
 {
- margin-left:0.4cm;
-
+ margin-left:0.7cm;
 }
+
 .answerborder
 {
  margin: 5px;
