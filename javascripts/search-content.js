@@ -203,7 +203,7 @@ function expandDocument(id){
 			else{
 				if(isBinaryDoc !=0)
 				{
-					documentdata +='<div><h4>Description:'+response.data.content.binary.description+'</h4>';
+					documentdata +='<div>Description:'+response.data.content.binary.description+'';
 					documentdata +='This Link contains Binary content. Please click below link to open the document</p>';
 					documentdata +='<a class="nopad" href='+response.data.resources.html.ref+' target="_apps">'+response.data.content.binary.name+'</a>';
 					documentdata +='</div>';
@@ -213,9 +213,9 @@ function expandDocument(id){
 					
 					documentdata +='<div>';
 					documentdata +='<ul>';
-					documentdata +='<li>'+response.data.subject+'</a></li>';
+					documentdata +='<li>'+response.data.subject+'</li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
-                    documentdata +='</ul>'; 
+                                        documentdata +='</ul>'; 
 				}
 			}
 			$(".content").show();
