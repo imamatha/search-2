@@ -208,7 +208,7 @@ function expandDocument(id){
 					documentdata += response.data.subject+'</a><br/><br/>Description</font>'+response.data.content.binary.description;
 					console.log("Desc: "+response.data.content.binary.description);
 					//documentdata +='<div class="answerborder">';					
-					documentdata += '<font style="color:blue">This document contains an uploaded document (PDF/DOC). <br/>';
+					documentdata += '<font class="root" style="color:blue">This document contains an uploaded document (PDF/DOC).';
 					documentdata += 'Please click <a target="_app" href="'+response.data.resources.html.ref+'">here</a> to open the document</font></div>';
 					documentdata +='</div>';
 				}
