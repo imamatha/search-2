@@ -212,8 +212,8 @@ function expandDocument(id){
 				{
 					
 					documentdata +='<div class="rootborder">';					
-					documentdata +='<li class="align">'+response.data.subject+'</li>';
-					documentdata +='<div>';					
+					documentdata +='<div class="align">'+response.data.subject+'</div>';
+					documentdata +='</div>';					
 					documentdata +='<ul>';
 					documentdata +='<li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
