@@ -157,7 +157,7 @@ function expandDiscussion(id){
 					});
 					discussionMessage +=rootmessage;
 					discussionMessage +=correctanswer;
-					discussionMessage +=helfulanswer;
+					discussionMessage +=helpfulanswer;
 					console.log("Html Content:: "+discussionMessage);
 								$(".content").show();
 								$(".content").html(discussionMessage);
