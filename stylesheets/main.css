@@ -62,11 +62,17 @@ text-decoration:underline;
 
 
 .image-button{
+    background-position: -176px -1360px;  
+    /*width: 20px !important; */
+}
+
+/*
+.image-button{
     background: url("../images/jive-icon-sprites-med.png") no-repeat scroll -176px -1360px transparent;  
     width: 20px !important;
 
 }
-	
+*/	
 
 .content{
 position:absolute;
