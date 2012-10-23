@@ -228,11 +228,12 @@ function expandDocument(id){
 					myDate=response.data.creationDate.substr(0,10);                  
 			                myDate=myDate.split("-"); 
 			                dateM=myDate[1];
-				       var finalMonth=monthConvert(dateM);
+				        var finalMonth=monthConvert(dateM);
 					var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 					documentdata +='<div class="rootborder">';					
 					documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
 					documentdata += response.data.subject+'</a></span>';
+					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
 					documentdata +='</div>';
 					
 					documentdata +='<div class="answerborder">';
