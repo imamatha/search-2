@@ -6,7 +6,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
-$("li.image-button").live('click', function () {
+$("span.image-button").live('click', function () {
       var curRowId = $(this).attr("id");
 	  if(curRowId.indexOf("DOC") != -1){
 		var docID = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
@@ -342,7 +342,7 @@ function search() {
                     		discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
 				discussion +='<ul>';
 				discussion +=discussionImage+'<li><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-				discussion +='<li class="jive-icon-med image-button" id="'+discussionID+'"></li>';
+				discussion +='<span class="jive-icon-med image-button" id="'+discussionID+'"></span>';
                     		discussion +='</ul>'; 
 					
 				discussion +='<div class="root1">';  
@@ -370,7 +370,7 @@ function search() {
                     		document +='<div id="div_'+docID+'" class="firstdiv"> ';
 				document +='<ul>';
                     		document +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
-				document +='<li class="image-button" id="DOC-'+docID+'" ></li>';
+				document +='<span class="jive-icon-med image-button" id="DOC-'+docID+'" ></span>';
                     		document +='</ul>';
                     
 				document +='<div class="root1">'; 
