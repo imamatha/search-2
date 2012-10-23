@@ -14,6 +14,13 @@ $("span.image-button").live('click', function () {
 		console.log("i'm in if section:document");
 		expandDocument(docID);
 		}
+		else if(curRowId.indexOf("post") != -1){
+			var blogpostId = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
+			console.log("i'm in if section:blogID::"+blogpostId);
+			var finalBlogId=(blogpostId.substring(blogpostId.lastIndexOf("/"))).substr(1);
+			console.log("i'm in if section:PostID::"+finalBlogId)
+			expandBlog(finalBlogId,blogpostId);
+		}
 		else
 		{
 			console.log("i'm in else section");
@@ -245,6 +252,55 @@ function expandDocument(id){
 			$(".content").html(documentdata);
 		});
 }
+function expandBlog(blogId, blogpostId){
+	var postId=blogpostId;
+	var finalpostId=postId.substr(0,postId.indexOf('/'))
+	console.log("Inside Blog expand and post id is"+finalpostId);
+	$(".content").html("");
+	$('.firstdiv').css('background-color', '#FFFFFF');
+	$('#div_'+finalpostId).css('background-color', '#F2F2F2');
+	console.log("Inside Blog expand");
+	var documentdata="";
+	var request = osapi.jive.core.blogs.get({id:blogId});
+		request.execute(function(response) {
+		console.log("Blog Post is"+JSON.stringify(response.data));
+		var request = response.data.posts.get();
+			request.execute(function(response) {
+				console.log("Posts in blog"+JSON.stringify(response.data));
+				var result = response.data;
+					if(!response.error) {
+						$.each(result, function(index, row) {
+							if(finalpostId.indexOf(row.id) != -1)
+							{
+							var postresult=row.get();
+							postresult.execute(function(response) {
+							console.log("Post Post is"+JSON.stringify(response.data));
+							if (response.error) {
+							console.log("Error in get: "+response.error.message);
+							}
+							else{
+							documentdata +='<div>';
+							documentdata +='<ul>';
+							documentdata +='<li>'+response.data.subject+'</a></li>';
+							documentdata +='<div class="root">'+response.data.content.text +'</div>';
+							documentdata +='</ul>';
+							}
+							$(".content").show();
+							$(".content").html(documentdata);
+						});
+
+
+					}
+
+
+				});
+
+			}
+
+		});
+	});
+
+}
 // Perform a search and display the results
 function search() {
     
@@ -410,9 +466,14 @@ function search() {
                
 		       if(row.type=="post")
                           {
-                    	  post +='<div>';
+  			var postDetailsId=row.resources.self.ref;
+			var blogSummaryId=row.blogSummary.resources.self.ref;
+			var blogId = (blogSummaryId.substring(blogSummaryId.lastIndexOf("/"))).substr(1);
+			var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
+                    	  post +='<div id="div_'+postId+'" class="firstdiv"> ';
 			  post +='<ul>';
                           post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                          post +='<li class="image-button" id="post-'+postId+'/'+blogId+'" ></li>';
                           post +='</ul>';
                     
 		     	 post +='<div class="root1">'; 
