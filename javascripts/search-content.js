@@ -473,7 +473,7 @@ function search() {
                     	  post +='<div id="div_'+postId+'" class="firstdiv"> ';
 			  post +='<ul>';
                           post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-                          post +='<li class="image-button" id="post-'+postId+'/'+blogId+'" ></li>';
+                          post +='<li class="jive-icon-med image-button" id="post-'+postId+'/'+blogId+'" ></li>';
                           post +='</ul>';
                     
 		     	 post +='<div class="root1">'; 
