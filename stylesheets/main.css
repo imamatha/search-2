@@ -157,6 +157,13 @@ sets border width on all sides*/
         /*text-align: justify; */
 }
 
+.document
+{
+margin-left:0.5cm;
+font-size:14px;
+font-weight:bold;
+}
+
 .align
 {
  margin-left:0.7cm;
