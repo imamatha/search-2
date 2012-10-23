@@ -205,8 +205,8 @@ function expandDocument(id){
 				{
 					documentdata +='<div class="rootborder">Description:'+response.data.content.binary.description+'</div>';
 					documentdata +='<div class="answerborder">';
-					documentdata +='This Link contains Binary content. Please click below link to open the document'" ";
-					documentdata +='<a class="nopad" href='+response.data.resources.html.ref+' target="_apps">'+response.data.content.binary.name+'</a>';
+					documentdata +='This Link contains Binary content. Please click below link to open the document';
+					documentdata +='<li><a class="nopad" href='+response.data.resources.html.ref+' target="_apps">'+response.data.content.binary.name+'</a></li>';
 					documentdata +='</div>';
 				}
 				else
