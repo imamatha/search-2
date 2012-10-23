@@ -73,7 +73,7 @@ function expandDiscussion(id){
 	console.log("Expand Row Id::: "+ id);
 	var discussionMessage="";
 	var correctanswer="";
-	var helfulanswer="";
+	var helpfulanswer="";
 	var rootmessage="";
 	var myDate="";
 	
@@ -121,7 +121,7 @@ function expandDiscussion(id){
 									correctanswer +='<div class="answerborder">';
 									correctanswer +='<ul>';
 									correctanswer +='<div class="correct">Correct Answer</div> ';
-									correctanswer +='<div>by&nbsp;';
+									//correctanswer +='<div>by&nbsp;';
 									//correctanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									//correctanswer +='on&nbsp;'+newDate+'</div>';
 									correctanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
@@ -138,15 +138,16 @@ function expandDiscussion(id){
 									var finalMonth=monthConvert(dateM);
 									var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 									console.log("I'm inside expand if");
-									helfulanswer +='<div class="answerborder">';
-									helfulanswer +='<ul>';
-									helfulanswer +='<div class="helpful">Helpful Answer </div>';
-									helfulanswer +='<div>by &nbsp;';
-									helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
-									helfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
-									helfulanswer +='<div class="root">'+row.content.text+ '</div>';
-									helfulanswer +='</ul>';
-									helfulanswer +='</div>';
+									helpfulanswer +='<div class="answerborder">';
+									helpfulanswer +='<ul>';
+									helpfulanswer +='<div class="helpful">Helpful Answer </div>';
+									//helfulanswer +='<div>by &nbsp;';
+									//helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
+									helpfulanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
+									helpfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
+									helpfulanswer +='<div class="root">'+row.content.text+ '</div>';
+									helpfulanswer +='</ul>';
+									helpfulanswer +='</div>';
 									
 									
 								}
