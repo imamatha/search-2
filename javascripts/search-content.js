@@ -212,7 +212,7 @@ function expandDocument(id){
 				{
 					documentdata +='<div>';
 					documentdata +='<div class="rootborder">';					
-					documentdata +='<div class="root1">'+response.data.subject+'</div>';
+					documentdata +='<div class="document">'+response.data.subject+'</div>';
 					documentdata +='</div>';
 					
 					documentdata +='<div class="answerborder">';
