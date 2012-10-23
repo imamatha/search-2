@@ -204,10 +204,11 @@ function expandDocument(id){
 				if(isBinaryDoc !=0)
 				{
 					documentdata +='<div class="rootborder">';
-					documentdata +='<div class="document">Description: '+response.data.content.binary.description+'</div>';	
+					documentdata +='<div class="document"><font size="+1"><a href="'+response.data.resources.html.ref+'"';
+					documentdata += response.data.subject+'</a></font><br/>Description </div>'+response.data.content.binary.description;
 					console.log("Desc: "+response.data.content.binary.description);
 					//documentdata +='<div class="answerborder">';					
-					documentdata +='This Link contains Binary content. Please click below link to open the document';
+					documentdata +='This document contains an uploaded document (PDF/DOC). Please click below link to open the document';
 					documentdata +='<li><a class="nopad" href='+response.data.resources.html.ref+' target="_apps">'+response.data.content.binary.name+'</a></li>';
 					documentdata +='</div>';
 				}
