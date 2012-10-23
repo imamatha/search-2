@@ -203,9 +203,11 @@ function expandDocument(id){
 			else{
 				if(isBinaryDoc !=0)
 				{
-					documentdata +='<div class="rootborder">';
-					documentdata +='<font size="+1"><a target="_app" href="'+response.data.resources.html.ref+'">';
-					documentdata += response.data.subject+'</a></font></div><div class="answerborder root">'+response.data.content.binary.description;
+					documentdata += '<div class="rootborder">';
+					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
+					documentdata += response.data.subject+'</a></span></div>';
+					
+					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
 					//documentdata +='<div class="answerborder">';					
 					documentdata += '<span class="subtext">This document contains an uploaded document (PDF/DOC). ';
 					documentdata += 'Please click <a target="_app" href="'+response.data.resources.html.ref+'">here</a> to open the document</span></div>';
@@ -213,16 +215,13 @@ function expandDocument(id){
 				}
 				else
 				{
-					documentdata +='<div>';
 					documentdata +='<div class="rootborder">';					
-					documentdata +='<div class="document">'+response.data.subject+'</div>';
+					documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
+					documentdata += response.data.subject+'</a></span>';
 					documentdata +='</div>';
 					
 					documentdata +='<div class="answerborder">';
-					documentdata +='<div class="root">'+response.data.content.text +'</div>';				
-                                        documentdata +='</div>';
-                                        
-                                        documentdata +='</div>';
+					documentdata +='<span class="root">'+response.data.content.text +'</span></div>';				
                                         
 				}
 			}
