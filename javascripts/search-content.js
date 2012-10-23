@@ -188,6 +188,7 @@ function expandDocument(id){
 		console.log("Expanding document response is " + JSON.stringify(response.data));
 		var discussionresult=response.data;
 		var isBinaryDoc=0;
+		var myDate="";
 		try {
 			if (response.data.content.binary.ref) {
 				isBinaryDoc = 1;
@@ -205,9 +206,15 @@ function expandDocument(id){
 			}
 			else{
 				if(isBinaryDoc !=0)
-				{
+				{       
+						myDate=response.data.creationDate.substr(0,10);                  
+			                        myDate=myDate.split("-"); 
+			                        dateM=myDate[1];
+						var finalMonth=monthConvert(dateM);
+						var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 					documentdata += '<div class="rootborder">';
 					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
+					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';	
 					documentdata += response.data.subject+'</a></span></div>';
 					
 					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
