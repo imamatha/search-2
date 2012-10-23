@@ -121,9 +121,9 @@ function expandDiscussion(id){
 									correctanswer +='<div class="answerborder">';
 									correctanswer +='<ul>';
 									correctanswer +='<div class="correct">Correct Answer</div> ';
-									correctanswer +='<div>by&nbsp;';
+									correctanswer +='<div><h4>by&nbsp;';
 									correctanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
-									correctanswer +='&nbsp;on&nbsp; ' + newDate+ '</div>';
+									correctanswer +='&nbsp;on&nbsp; ' + newDate+ '</h4></div>';
 									correctanswer +='<div class="root">'+row.content.text+ '</div	>';
 									correctanswer +='</ul>';
 									correctanswer +='</div>';
