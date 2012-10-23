@@ -214,8 +214,8 @@ function expandDocument(id){
 						var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 					documentdata += '<div class="rootborder">';
 					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';						
-					documentdata += response.data.subject+'</a></span></div>';
-					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
+					documentdata += response.data.subject+'</a></span>';
+					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div></div>';
 					
 					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
 					//documentdata +='<div class="answerborder">';					
@@ -225,6 +225,11 @@ function expandDocument(id){
 				}
 				else
 				{
+					myDate=response.data.creationDate.substr(0,10);                  
+			                myDate=myDate.split("-"); 
+			                dateM=myDate[1];
+				       var finalMonth=monthConvert(dateM);
+					var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 					documentdata +='<div class="rootborder">';					
 					documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
 					documentdata += response.data.subject+'</a></span>';
