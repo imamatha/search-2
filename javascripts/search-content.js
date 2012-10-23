@@ -204,9 +204,8 @@ function expandDocument(id){
 				if(isBinaryDoc !=0)
 				{
 					documentdata +='<div class="rootborder">';
-					documentdata +='<div class="root"><font size="+1"><a target="_app" href="'+response.data.resources.html.ref+'">';
-					documentdata += response.data.subject+'</a><br/><br/>Description</font>'+response.data.content.binary.description;
-					console.log("Desc: "+response.data.content.binary.description);
+					documentdata +='<font size="+1"><a target="_app" href="'+response.data.resources.html.ref+'">';
+					documentdata += response.data.subject+'</a></font></div><div class="answerborder root">'+response.data.content.binary.description;
 					//documentdata +='<div class="answerborder">';					
 					documentdata += '<span class="subtext">This document contains an uploaded document (PDF/DOC). ';
 					documentdata += 'Please click <a target="_app" href="'+response.data.resources.html.ref+'">here</a> to open the document</span></div>';
