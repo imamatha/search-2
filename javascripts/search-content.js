@@ -213,7 +213,7 @@ function expandDocument(id){
 					
 					documentdata +='<div>';
 					documentdata +='<ul>';
-					documentdata +='<li>'+response.data.subject+'</li>';
+					documentdata +='<li><h4>'+response.data.subject+'</h4></li>';
 					documentdata +='<div class="root">'+response.data.content.text +'</div>';
                                         documentdata +='</ul>'; 
 				}
