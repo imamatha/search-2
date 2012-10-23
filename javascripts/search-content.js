@@ -87,7 +87,7 @@ function expandDiscussion(id){
 		}
 		else{
 			
-			myDate=row.creationDate.substr(0,10);                  
+			myDate=response.data.creationDate.substr(0,10);                  
 			myDate=myDate.split("-"); 
 			dateM=myDate[1];
 			var finalMonth=monthConvert(dateM);
