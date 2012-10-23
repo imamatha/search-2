@@ -213,9 +213,9 @@ function expandDocument(id){
 						var finalMonth=monthConvert(dateM);
 						var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 					documentdata += '<div class="rootborder">';
-					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
-					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';	
+					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';						
 					documentdata += response.data.subject+'</a></span></div>';
+					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
 					
 					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
 					//documentdata +='<div class="answerborder">';					
