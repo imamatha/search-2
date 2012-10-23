@@ -210,15 +210,15 @@ function expandDocument(id){
 				}
 				else
 				{
-					
+					documentdata +='<div>';
 					documentdata +='<div class="rootborder">';					
 					documentdata +='<div class="align">'+response.data.subject+'</div>';
+					documentdata +='</div>';
+					
 					documentdata +='<div class="answerborder">';
-			
-					documentdata +='<li>';
-					documentdata +='<div class="root">'+response.data.content.text +'</div>';
-					documentdata +='</li>';
-                                        documentdata +='</div>';                                        
+					documentdata +='<div class="root">'+response.data.content.text +'</div>';				
+                                        documentdata +='</div>';
+                                        
                                         documentdata +='</div>';
                                         
 				}
