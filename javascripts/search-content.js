@@ -418,8 +418,9 @@ function search() {
 				{
 				  discussionImage +='<span class="jive-icon-med jive-icon-discussion"></span>';
 				}
-				discussion +='<div>';
+			
                     		discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
+                    		discussion +='<div>';
 				discussion +='<ul>';
 				discussion +=discussionImage+'<li><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                                	discussion +='</ul>'; 
