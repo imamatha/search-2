@@ -197,6 +197,13 @@ font-weight:bold;
  font-size:90%;
  color: black
  }
+ 
+ .answerborder ul
+ {
+  padding: 0 0;    
+ }
+ 
+ 
  .rootborder
 {
  margin: 5px;
