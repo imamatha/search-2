@@ -62,7 +62,8 @@ text-decoration:underline;
 
 
 .image-button{
-    background-position: -176px -1360px;  
+    background-position: -176px -1360px; 
+    float: left;
     /*width: 20px !important; */
 }
 
