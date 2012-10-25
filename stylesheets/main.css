@@ -101,6 +101,8 @@ font-size:12px;
 }
 .firstdiv{
 background-color:white;
+border: 1px;
+border-color: white;
 }
 
 .root
