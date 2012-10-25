@@ -441,7 +441,7 @@ function search() {
                     	        discussion +='</ul>';
 				discussion +='</div>';				                
 				discussion +='</div>';
-				//discussion +='<br>';                
+				discussion +='<br>';                
                            }
                
                
