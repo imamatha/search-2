@@ -109,7 +109,9 @@ font-size:12px;
 }
 .firstdiv{
 background-color:white;
-border: 1.5px black;
+border: 3px;
+border-color: red;
+
 }
 
 .root
