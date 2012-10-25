@@ -101,13 +101,13 @@ function expandDiscussion(id){
 			var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 		        console.log("I'm inside Root Message Div");
 		        rootmessage +='<div class="rootborder">';
-			rootmessage +='<ul>';
+			//rootmessage +='<ul>';
 			rootmessage +='<div ><a href="'+discussionresult.messages.root.resources.html.ref+'" target="_apps">'+discussionresult.messages.root.subject+'</a></div>';
 			rootmessage +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';	
 			rootmessage +='<span class="root">'+discussionresult.messages.root.content.text+'</span>';                             
                 	//rootmessage +=+discussionresult.messages.root.content.text+;                 
                         rootmessage +='</div>';				
-			rootmessage +='</ul>';
+			//rootmessage +='</ul>';
 			rootmessage +='</div>';
 			
 			
@@ -127,14 +127,14 @@ function expandDiscussion(id){
 									var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 									console.log("I'm inside expand if");
 									correctanswer +='<div class="answerborder">';
-									correctanswer +='<ul>';
+									//correctanswer +='<ul>';
 									correctanswer +='<div class="correct">Correct Answer</div> ';
 									//correctanswer +='<div>by&nbsp;';
 									//correctanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									//correctanswer +='on&nbsp;'+newDate+'</div>';
 									correctanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
 									correctanswer +='<div class="root">'+row.content.text+ '</div	>';
-									correctanswer +='</ul>';
+									//correctanswer +='</ul>';
 									correctanswer +='</div>';
 									
 									
@@ -147,14 +147,14 @@ function expandDiscussion(id){
 									var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 									console.log("I'm inside expand if");
 									helpfulanswer +='<div class="answerborder">';
-									helpfulanswer +='<ul>';
+								//	helpfulanswer +='<ul>';
 									helpfulanswer +='<div class="helpful">Helpful Answer </div>';
 									//helfulanswer +='<div>by &nbsp;';
 									//helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									helpfulanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
 									//helpfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
 									helpfulanswer +='<div class="root">'+row.content.text+ '</div>';
-									helpfulanswer +='</ul>';
+									//helpfulanswer +='</ul>';
 									helpfulanswer +='</div>';
 									
 									
