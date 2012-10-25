@@ -207,11 +207,6 @@ font-weight:bold;
  color: black
  }
  
- .answerborder ul
- {
-  padding: 0 0;    
- }
- 
  
  .rootborder
 {
@@ -224,11 +219,7 @@ font-weight:bold;
  text-decoration: none;
  padding: 0 0;
  }
- .rootborder ul 
- {  
-   padding: 0 0;
- } 
-  
+ 
   
  .caption2
  {
