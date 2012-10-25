@@ -452,6 +452,8 @@ function search() {
                     		document +='<div id="div_'+docID+'" class="firstdiv"> ';
 				document +='<ul>';
                     		document +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                    		document +='</ul>';
+                    		document +='<ul>';
 				document +='<span class="jive-icon-med image-button" id="DOC-'+docID+'" ></span>';
                     		document +='</ul>';
                     
@@ -483,8 +485,9 @@ function search() {
                     	  post +='<div id="div_'+postId+'" class="firstdiv"> ';
 			  post +='<ul>';
                           post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-                          post +='<span class="jive-icon-med image-button" id="post-'+postId+'/'+blogId+'" ></span>';
-                          
+                          post +='</ul>';
+                           post +='<ul>';
+                          post +='<span class="jive-icon-med image-button" id="post-'+postId+'/'+blogId+'" ></span>';                            
                           post +='</ul>';
                     
 		     	 post +='<div class="root1">'; 
