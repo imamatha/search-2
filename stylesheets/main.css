@@ -208,10 +208,10 @@ font-weight:bold;
  text-decoration: none;
  padding: 0 0;
  }
- .rootborder ul a
-  {  
+ .rootborder ul 
+ {  
    padding: 0 0;
-  } 
+ } 
   
   
  .caption2
