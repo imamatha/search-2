@@ -26,9 +26,12 @@ text-decoration:underline;
 }
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
-    height: 16px;
+   /* height: 16px;*/
     margin: -1px 5px 0 0;
-    width: 17px;
+   /* width: 17px;*/
+    height: 18px;
+    width: 19px;
+    
 }
 
 .jive-icon-sml, .jive-icon-med, .jive-icon-big, .jive-icon-huge {
