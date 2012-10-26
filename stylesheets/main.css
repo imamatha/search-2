@@ -21,7 +21,7 @@ line-height:10px;
 
 #search-results ul li a:hover
 {
-text-decoration:underline;
+text-decoration:none;
 }
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
@@ -139,7 +139,7 @@ padding-bottom: 1px;
  .root-header
  {
        font-weight:bold;
-       font-size:16px;
+       font-size:15px;
  }
 
 .link
