@@ -132,12 +132,12 @@ padding-bottom: 1px;
  margin-left:0.5cm;
  }
  
- .root1 a
+ .content-date a
  {
       text-decoration:none;
  }
  
- .root1 a:hover
+ .content-date a:hover
  {
       text-decoration:underline;
  }
