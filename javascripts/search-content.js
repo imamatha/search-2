@@ -104,7 +104,7 @@ function expandDiscussion(id){
 		        rootmessage +='<div class="rootborder">';
 			//rootmessage +='<ul>';
 			rootmessage +='<div class="root-header"><a href="'+discussionresult.messages.root.resources.html.ref+'" target="_apps">'+discussionresult.messages.root.subject+'</a></div>';
-			rootmessage +='<div class="root1"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';	
+			rootmessage +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';	
 			rootmessage +='<span class="root">'+discussionresult.messages.root.content.text+'</span>';                             
                 	//rootmessage +=+discussionresult.messages.root.content.text+;                 
                         rootmessage +='</div>';				
