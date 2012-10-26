@@ -124,6 +124,16 @@ padding-bottom: 1px;
  margin-left:0.5cm;
  }
  
+ .root1 a
+ {
+      text-decoration:none;
+ }
+ 
+ .root1 a:hover
+ {
+      text-decoration:underline;
+ }
+ 
 .correct
  {
   color:Green;
