@@ -23,11 +23,6 @@ line-height:10px;
 {
 text-decoration:underline;
 }
-#search-results div:hover
-{
- background-position: -220px -1360px;    
- float: right;
-}
 
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
@@ -67,12 +62,12 @@ text-decoration:underline;
 }
 
 
-/*.image-button{
-    /*background-position: -176px -1360px; 
+.image-button{
+    /*background-position: -176px -1360px; */
     background-position: -220px -1360px;    
      float: right;
      vertical-align: right;
-}*/
+}
 
 .image-button:hover{
     background-position: -176px -1360px;    
