@@ -223,7 +223,7 @@ function expandDocument(id){
 					documentdata += '<div class="rootborder">';
 					documentdata += '<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';						
 					documentdata += response.data.subject+'</a></span>';
-					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div></div>';
+					documentdata +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div></div>';
 					
 					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
 					//documentdata +='<div class="answerborder">';					
@@ -241,7 +241,7 @@ function expandDocument(id){
 					documentdata +='<div class="rootborder">';					
 					documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
 					documentdata += response.data.subject+'</a></span>';
-					documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
+					documentdata +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
 					documentdata +='</div>';
 					
 					documentdata +='<div class="answerborder">';
@@ -288,7 +288,7 @@ function expandBlog(blogId, blogpostId){
 							blogdata +='<div class="rootborder">';
 						        blogdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
 							blogdata += response.data.subject+'</a></span>';
-							blogdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
+							blogdata +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
 							blogdata +='</div>';
 							
 							blogdata +='<div class="answerborder">';
