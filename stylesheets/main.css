@@ -63,8 +63,8 @@ text-decoration:underline;
 
 
 .image-button{
-   background-position:none; 
-   /* background-position: -220px -1360px;    */
+  
+    background-position: -220px -1360px;   
      float: right;
 }
 
@@ -117,6 +117,10 @@ background:white;
 position:relative;
 padding-top: 1px;
 padding-bottom: 1px;
+}
+.firstdiv:hover
+{
+     
 }
 
 .root
