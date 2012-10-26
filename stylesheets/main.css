@@ -70,6 +70,7 @@ text-decoration:underline;
 .image-button:enabled:hover{
     background-position: -176px -1360px;    
      float: right;
+     vertical-align: right;
 }
 /*
 .image-button{
