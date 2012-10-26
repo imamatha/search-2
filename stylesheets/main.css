@@ -108,9 +108,7 @@ font-size:12px;
 }
 .firstdiv{
 background:white;
-border: 3px;
-margin-top:1.4%;
-
+position:relative;
 }
 
 .root
