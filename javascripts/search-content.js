@@ -80,7 +80,7 @@ function expandDiscussion(id){
 	
 //	css({"propertyname":"value","propertyname":"value",...});
 //	$('#div_'+id).css({"background-color":"#F2F2F2","padding-top":"0px","border":"1px #FFFFFF"});
-	$('#div_'+id).css('background-color', '#FFFFFF');
+	$('#div_'+id).css('background-color', '#F2F2F2');
 //	$('#div_'+id);
 	console.log("Expand Row Id::: "+ id);
 	var discussionMessage="";
