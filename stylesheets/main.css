@@ -4,6 +4,10 @@ padding: .1em .50em;
 line-height:10px;
 
 }
+#div_+id 
+{
+   padding-top:20px;  
+}
 
 #search-results ul {padding: 0 0;}
 
