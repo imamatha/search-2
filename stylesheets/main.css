@@ -67,7 +67,7 @@ text-decoration:underline;
      float: right;
 }
 
-.image-button:hover{
+.image-button:enabled:hover{
     background-position: -176px -1360px;    
      float: right;
 }
