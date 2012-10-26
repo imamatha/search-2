@@ -133,7 +133,7 @@ function expandDiscussion(id){
 									//correctanswer +='<div>by&nbsp;';
 									//correctanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
 									//correctanswer +='on&nbsp;'+newDate+'</div>';
-									correctanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
+									correctanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
 									correctanswer +='<div class="root">'+row.content.text+ '</div	>';
 									//correctanswer +='</ul>';
 									correctanswer +='</div>';
@@ -152,7 +152,7 @@ function expandDiscussion(id){
 									helpfulanswer +='<div class="helpful">Helpful Answer </div>';
 									//helfulanswer +='<div>by &nbsp;';
 									//helfulanswer +='<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a>';
-									helpfulanswer +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
+									helpfulanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';
 									//helpfulanswer +='&nbsp;on&nbsp; '+ newDate + '</div>';
 									helpfulanswer +='<div class="root">'+row.content.text+ '</div>';
 									//helpfulanswer +='</ul>';
