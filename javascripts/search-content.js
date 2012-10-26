@@ -261,7 +261,7 @@ function expandBlog(blogId, blogpostId){
 	$('.firstdiv').css('background-color', '#FFFFFF');
 	$('#div_'+finalpostId).css('background-color', '#F2F2F2');
 	console.log("Inside Blog expand");
-	var documentdata="";
+	var blogdata="";
 	var request = osapi.jive.core.blogs.get({id:blogId});
 		request.execute(function(response) {
 		console.log("Blog Post is"+JSON.stringify(response.data));
@@ -285,17 +285,17 @@ function expandBlog(blogId, blogpostId){
               dateM=myDate[1];
 			        var finalMonth=monthConvert(dateM);
 							var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
-							documentdata +='<div class="rootborder">';
-							documentdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
-							documentdata += response.data.subject+'</a></span>';
-							documentdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
-							documentdata +='</div>';
+							blogdata +='<div class="rootborder">';
+						        blogdata +='<span class="document"><a target="_app" href="'+response.data.resources.html.ref+'">';
+							blogdata += response.data.subject+'</a></span>';
+							blogdata +='<div> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div>';
+							blogdata +='</div>';
 							
-							documentdata +='<div class="answerborder">';
-							documentdata +='<span class="root">'+response.data.content.text +'</span></div>';	
+							blogdata +='<div class="answerborder">';
+							blogdata +='<span class="root">'+response.data.content.text +'</span></div>';	
 							}
 							$(".content").show();
-							$(".content").html(documentdata);
+							$(".content").html(blogdata);
 						});
 
 
