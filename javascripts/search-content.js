@@ -6,7 +6,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
-$("span.image-button").live('click', function () {
+$("span.image-button").live('hover', function () {
       var curRowId = $(this).attr("id");
 	  if(curRowId.indexOf("DOC") != -1){
 		var docID = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
