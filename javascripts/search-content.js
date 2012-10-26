@@ -77,7 +77,7 @@ function expandDiscussion(id){
 	 $(".content").html("");
 	$('.firstdiv').css('background-color', '#FFFFFF');
 //	css({"propertyname":"value","propertyname":"value",...});
-	$('#div_'+id).css({"background-color":"#F2F2F2","padding-top":"0.5px"});
+	$('#div_'+id).css({"background-color":"#F2F2F2","padding-top":"0.1px"});
 //	$('#div_'+id);
 	console.log("Expand Row Id::: "+ id);
 	var discussionMessage="";
