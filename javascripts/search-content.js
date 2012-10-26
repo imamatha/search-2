@@ -75,10 +75,8 @@ return outMonth;
 function expandDiscussion(id){
 
 	 $(".content").html("");
-//	$('.firstdiv').css('background-color', '#FFFFFF');
-	$('.firstdiv').css({"background-color":"#FFFFFF","border":"1px #FFFFFF"});
+	$('.firstdiv').css('background-color', '#FFFFFF');
 	$('#div_'+id).css('background-color', '#F2F2F2');
-//	css({"propertyname":"value","propertyname":"value",...});
 //	$('#div_'+id).css({"background-color":"#F2F2F2","padding-top":"0px","border":"1px #FFFFFF"});
 	console.log("Expand Row Id::: "+ id);
 	var discussionMessage="";
