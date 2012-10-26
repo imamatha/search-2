@@ -6,7 +6,8 @@ line-height:10px;
 }
 #div_+id 
 {
-   padding-top:20px;  
+   padding-top:20px;
+   background-color: #F2F2F2;
 }
 
 #search-results ul {padding: 0 0;}
