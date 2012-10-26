@@ -65,14 +65,13 @@ text-decoration:underline;
 .image-button{
     /*background-position: -176px -1360px; */
     background-position: -220px -1360px;    
-    /* float: right;*/
-     vertical-align: right;
+     float: right;
 }
 
 .image-button:hover{
     background-position: -176px -1360px;    
-     /*float: right;*/
-     vertical-align: right;
+     float: right;
+     /*vertical-align: right;*/
 }
 /*
 .image-button{
