@@ -135,6 +135,11 @@ padding-bottom: 1px;
   color:#CC6600;
   font-weight:bold;
  }
+ 
+ .root-header
+ {
+       font-weight:bold;
+ }
 
 .link
 {
