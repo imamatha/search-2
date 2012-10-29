@@ -6,6 +6,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
+
 $("span.image-button").live('hover', function () {
       var curRowId = $(this).attr("id");
 	  if(curRowId.indexOf("DOC") != -1){
@@ -29,6 +30,12 @@ $("span.image-button").live('hover', function () {
 
 	
     });
+    
+    
+ $(function() {
+        $( "#tabs" ).tabs();
+    });
+
  function monthConvert(d){
 
   var outMonth="";
@@ -317,6 +324,7 @@ function search() {
 	$(".content").html("");
 	$(".content").hide();
     gadgets.window.adjustHeight();
+    var html ="";
     var params = {
         //limit : $("#limit").val(),
         query : $("#query").val(),
@@ -510,12 +518,15 @@ function search() {
                                   
             });
                        
-                        html +=discussion;
-			html +=document;
-			html +=post;
+                       // html +=discussion;
+			//html +=document;
+			//html +=post;
 				
             console.log(html);
-            $("#search-results").html(html);
+             $("#tabs-1").html(discussion);
+              $("#tabs-2").html(document);
+             $("#tabs-3").html(post);
+           // $("#search-results").html(html);
             $("#search-info").show();
             gadgets.window.adjustHeight();
         }

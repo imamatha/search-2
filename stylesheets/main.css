@@ -1,25 +1,30 @@
-#search-results ul li {
-display: inline; 
-padding: .1em .50em;
+.search-results ul li {
+display: inline;
+padding: 0 0;
 line-height:10px;
 }
+/*.tabs ul li{
+display: inline;
+padding: 0 0;
+line-height:10px;
+}   */  
 
-#search-results ul {padding: 0 0;}
+.search-results ul {padding: 0 0;}
 
-#search-results ul li a
+.search-results ul li a
 {
 text-decoration: none;
 padding: 0 0;
 }
 
-#search-results ul li a.nopad
+.search-results ul li a.nopad
 {
 text-decoration: none;
 padding: 0 0;
 line-height:10px;
 }
 
-#search-results ul li a:hover
+.search-results ul li a:hover
 {
 text-decoration:underline;
 }
@@ -64,36 +69,55 @@ text-decoration:underline;
 
 .image-button{
   
-    background-position: -220px -1360px;   
+    background-position: -220px -1360px;
      float: right;
 }
 
 .image-button:hover{
-    background-position: -176px -1360px;    
+    background-position: -176px -1360px;
      float: right;
      /*vertical-align: right;*/
 }
+/*.image-button::selection{
+    background-position: -176px -1360px;
+    /*background-position: -220px -1360px;
+    
+     float: right;
+    /*width: 20px !important; 
+}
+.image-button::-moz-selection{
+    background-position: -176px -1360px;
+    /*background-position: -220px -1360px;
+    
+     float: right;
+    /*width: 20px !important; 
+}*/
+
 /*
 .image-button{
-    background: url("../images/jive-icon-sprites-med.png") no-repeat scroll -176px -1360px transparent;  
-    width: 20px !important;
+background: url("../images/jive-icon-sprites-med.png") no-repeat scroll -176px -1360px transparent;
+width: 20px !important;
 
 }
-*/	
+*/    
 
 .content{
-position:absolute;
+position:fixed;
+/*border:1px solid black;*/
 border:1px solid black;
 border-color:#A0A0A0;
-top:108px;
+top:150px;
 left:50.5%;
-right:300px;
+right:270px;
 bottom:10px;
-width:48%;
+width:47%;
 /* background-color:#D8D8D8; */
 padding:10px;
 
 display:inline;
+-webkit-border-radius:25px;
+-moz-border-radius: 25px;
+border-radius: 25px
 }
 .content-date
 {
@@ -118,17 +142,13 @@ position:relative;
 padding-top: 1px;
 padding-bottom: 1px;
 }
-.firstdiv:hover
-{
-     
-}
 
 .root
 {
  font-size:12px;
  font-family:"Times New Roman";
  color:black;
- line-height: 1.5em; 
+ line-height: 1.5em;
  }
  
 .root1
@@ -173,7 +193,7 @@ padding-bottom: 1px;
        text-decoration:none;
        
  }
- .root-header  a:hover
+ .root-header a:hover
  {
        text-decoration:underline;
        
@@ -189,38 +209,40 @@ padding-bottom: 1px;
  color: blue;
  font-size:12px;
  font-family:"Times New Roman";
- line-height: 1.5em; 
+ line-height: 1.5em;
 }
 
 .withborder {
-       border: 1px solid black;
-       /* position:absolute;*/
+       border:0px;
+        
        top:5px;
        left:1px;
        width:50%;
        bottom:10px;
-       padding:1px;
+       padding:1px*/
+         width:50%;
        /* border-style: rigid;
 border-width: thin;
 sets border width on all sides*/
         border-color: rgb(160,160,160);
+        /*border-style: hidden;*/
         line-height:1;
         /*text-align: justify; */
 }
 /*.border {
-       border: 1px solid black;
-       /* position:absolute;
-       top:5px;
-       left:1px;
-       width:200px;
-       bottom:10px;
-       padding:1px;
-       /* border-style: rigid;
+border: 1px solid black;
+/* position:absolute;
+top:5px;
+left:1px;
+width:200px;
+bottom:10px;
+padding:1px;
+/* border-style: rigid;
 border-width: thin;
 sets border width on all sides
-        border-color: rgb(160,160,160);
-        line-height:1;
-        /*text-align: justify; 
+border-color: rgb(160,160,160);
+line-height:1;
+/*text-align: justify;
 }*/
 /*.document
 {
@@ -231,7 +253,7 @@ font-weight:bold;
 
 .align
 {
- margin-left:0.7cm;
+ margin-left:0.5cm;
 }
 
 .answerborder
@@ -256,8 +278,3 @@ font-weight:bold;
  padding: 0 0;
  }
  
-  
- /*.caption2
- {
-  background: #CCCCFF;
- }*/
