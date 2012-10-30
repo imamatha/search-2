@@ -294,11 +294,6 @@ function expandBlog(blogId, blogpostId){
 
 }
 
-function expandAll(id)
-{
-var AllID=
-
-}
 
 // Perform a search and display the results
 function search() {
