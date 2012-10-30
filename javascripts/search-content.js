@@ -493,10 +493,7 @@ function search() {
 	                        post +='<br>';              
 	               }
 	           if(row.type=="discussion"  && row.type=="document" && row.type=="post")
-	           {
-	           	all +='<div id="div_'+discussionID+'" class="firstdiv">'; 
-	           	all +='<div id="div_'+postId+'" class="firstdiv"> ';
-	           	all +='<div id="div_'+docID+'" class="firstdiv"> ';	           	
+	           {           	
 	           	 all +=discussion;
 	                 all +="<br>"+document;
 	                 all +="<br>"+post;
@@ -505,10 +502,7 @@ function search() {
             });
                 
              console.log(html);      
-	     all +=discussion;
-	     all +="<br>"+document;
-	     all +="<br>"+post;
-	       
+	     
              $("#tabs-1").html(discussion);
              $("#tabs-2").html(document);
              $("#tabs-3").html(post);
