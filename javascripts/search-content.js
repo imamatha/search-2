@@ -418,7 +418,7 @@ function search() {
 					
 				discussion +='<div class="root">';
                                 discussion +='<ul>';                   
-                   		discussion +='<div class="align">'+contentSummary+'</div>';                  
+                   		discussion +='<div>'+contentSummary+'</div>';                  
                     	        discussion +='</ul>';
 				discussion +='</div>';				                
 				discussion +='</div>';
@@ -448,7 +448,7 @@ function search() {
 					
 				document +='<div class="root">';
                     		document +='<ul>';                    
-                    		document +='<div class="align">'+contentSummary+'</div>';                   
+                    		document +='<div>'+contentSummary+'</div>';                   
                     		document +='</ul>';
 				document +='</div>';
                                        
@@ -482,7 +482,7 @@ function search() {
 						
 				post +='<div class="root">';    
 				post +='<ul>';  
-	                        post +='<div class="align">'+contentSummary+'</div>';  
+	                        post +='<div>'+contentSummary+'</div>';  
 	                        post +='</ul>';
 				post +='</div>'; 
 	                                    
