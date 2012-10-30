@@ -501,10 +501,15 @@ function search() {
                 
              console.log(html); 
             
-  
+              all1 +='<div id="div_'+discussionID+'" class="firstdiv">';                    
 	      all1 +=discussion;
+	      all1 +='</div>';
+	      all1 +='<div id="div_'+docID+'" class="firstdiv">';   
 	      all1 +="<br>"+document;
+	      all1 +='</div>';
+	      all1 +='<div id="div_'+postId+'" class="firstdiv"> ';
 	      all1 +="<br>"+post;
+	      all1 +='</div>';
 	      all +=all1;
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);
