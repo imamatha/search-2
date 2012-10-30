@@ -496,7 +496,9 @@ function search() {
             });
                 
              console.log(html);      
-             all +='<div class="firstdiv"> ';	
+             $(".content").html("");
+	     $('.firstdiv').css('background-color', '#FFFFFF');
+	     $('#div_'+id).css('background-color', '#F2F2F2');
 	     all +=discussion;
 	     all +="<br>"+document;
 	     all +="<br>"+post;
