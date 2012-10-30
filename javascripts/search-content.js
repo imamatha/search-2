@@ -503,7 +503,8 @@ function search() {
 	      all1 +=discussion;
 	      all2 +="<br>"+document;
 	      all3 +="<br>"+post;
-	      all +='<div>'+all4+'</div>';
+	      all +='<br>'+all4+'</br>';
+	      gadgets.window.adjustHeight();
 	     $("#tabs-1").html(all);   
              $("#tabs-2").html(all1);
              $("#tabs-3").html(all2);
