@@ -498,7 +498,8 @@ function search() {
 	                        post +='<br>';              
 	               }
 
-            });        
+            });  
+              var postId="";
 	      all1 +=discussion;   
 	      all2 +="<br>"+document;	 
 	      all3 +="<br>"+post;	    
