@@ -209,7 +209,7 @@ function expandDocument(id){
 					documentdata += '<span class="root-header"><a href="'+response.data.resources.html.ref+'" target="_app">';						
 					documentdata += response.data.subject+'</a></span>';
 					documentdata +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+response.data.author.username+'>'+response.data.author.name+'</a> on '+newDate+'</div></div>';				
-					documentdata += '<div class="answerborder root">'+response.data.content.binary.description;
+					documentdata += '<div class="answerborder">'+response.data.content.binary.description;
 					documentdata += '<span class="subtext">This document contains an uploaded document (PDF/DOC). ';
 					documentdata += 'Please click <a target="_app" href="'+response.data.resources.html.ref+'">here</a> to open the document</span></div>';
 					documentdata +='</div>';
