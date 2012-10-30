@@ -499,7 +499,6 @@ function search() {
 	     all +=discussion;
 	     all +="<br>"+document;
 	     all +="<br>"+post;
-	     all +='<div>';
 	       
              $("#tabs-1").html(discussion);
              $("#tabs-2").html(document);
