@@ -497,11 +497,9 @@ function search() {
 	                        post +='<br>';              
 	               }
 	        
-            });
-                
-             console.log(html); 
-            
-              all1 +='<div id="div_'+discussionID+'" class="firstdiv">';                    
+	        
+	        
+	      all1 +='<div id="div_'+discussionID+'" class="firstdiv">';                    
 	      all1 +=discussion;
 	      all1 +='</div>';
 	      all1 +='<div id="div_'+docID+'" class="firstdiv">';   
@@ -511,6 +509,11 @@ function search() {
 	      all1 +="<br>"+post;
 	      all1 +='</div>';
 	      all +=all1;
+            });
+                
+             console.log(html); 
+            
+            
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
