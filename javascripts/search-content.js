@@ -508,7 +508,9 @@ function search() {
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(all1);
              $("#tabs-3").html(all2);
-             $("#tabs-4").html(all3);           
+             '<div id="div_'+postId+'" class="firstdiv"> ';
+             $("#tabs-4").html(all3); 
+             '</div>';
              $("#search-info").show();
              
              gadgets.window.adjustHeight();
