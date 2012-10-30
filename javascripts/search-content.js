@@ -319,7 +319,8 @@ function search() {
         }
         else {
         	var all1 ="";
-        	
+               var all2 ="";
+               var all3 ="";
         	
             var all ="";
             var html = "";
@@ -496,23 +497,18 @@ function search() {
 	                        post +='</div>';          
 	                        post +='<br>';              
 	               }
-	        
-	        
-	        
-	                    
+
+            });        
 	      all1 +=discussion;   
-	      all1 +="<br>"+document;	 
-	      all1 +="<br>"+post;	    
+	      all2 +="<br>"+document;	 
+	      all3 +="<br>"+post;	    
 	      all +=all1;
-            });
-                
-             console.log(html); 
-            
-            
+	      all +=all2;
+	      all +=all3;
 	     $("#tabs-1").html(all);
-             $("#tabs-2").html(discussion);
-             $("#tabs-3").html(document);
-             $("#tabs-4").html(post);           
+             $("#tabs-2").html(all1);
+             $("#tabs-3").html(all2);
+             $("#tabs-4").html(all3);           
              $("#search-info").show();
              
              gadgets.window.adjustHeight();
