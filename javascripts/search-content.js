@@ -499,7 +499,7 @@ function search() {
              All +=discussion;
 	     All +="<br>"+document;
 	     All +="<br>"+post;
-	     $("#tabs-1").html(all);             
+	     $("#tabs-1").html(All);             
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
              $("#tabs-4").html(post);
