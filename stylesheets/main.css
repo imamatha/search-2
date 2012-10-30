@@ -1,4 +1,3 @@
-
 .search-results ul li {
      display: inline;
      padding: 0 0;
@@ -183,10 +182,6 @@
 .helpful{
       color:#CC6600;
       font-weight:bold;
-}
- 
-.link {
-      font-size:14px;
 }
 
 .subtext{
