@@ -492,13 +492,19 @@ function search() {
 	                        post +='</div>';          
 	                        post +='<br>';              
 	               }
+	               	 if(row.type=="all")
+	               	 {
+	               	  all +='<div class="firstdiv"> ';	
+	               	  all +=discussion;
+	                  all +="<br>"+document;
+	                  all +="<br>"+post;
+	                  all +='<div>';
+	               	 }
                                   
             });
                 
              console.log(html);      
-             all +=discussion;
-	     all +="<br>"+document;
-	     all +="<br>"+post;
+            
 	     $("#tabs-1").html(all);             
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
