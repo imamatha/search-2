@@ -10,70 +10,70 @@ $("span.image-button").live('hover', function () {
 	           var docID = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
 	           console.log("i'm in if section:document");
 	           expandDocument(docID);
-	          }
+	        }
 	        else if(curRowId.indexOf("post") != -1){
 			var blogpostId = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
 			console.log("i'm in if section:blogID::"+blogpostId);
 			var finalBlogId=(blogpostId.substring(blogpostId.lastIndexOf("/"))).substr(1);
 			console.log("i'm in if section:PostID::"+finalBlogId)
 			expandBlog(finalBlogId,blogpostId);
-		       }
+		}
 		else
 		{
 			console.log("i'm in else section");
 			expandDiscussion(curRowId);
 		}
 
-    });
+ });
     
  //function for tabs   
  $(function() {
         $( "#tabs" ).tabs();
-   });
+ });
    
 //function for date format
  function monthConvert(d){
 
   var outMonth="";
     switch (d) {
-    case '01':
-    outMonth= "Jan";
-    break;
-    case '02':
-    outMonth= "Feb";
-    break;
-    case '03':
-    outMonth= "Mar";
-    break;
-    case '04':
-    outMonth= "Apr";
-    break;
-    case '05':
-    outMonth= "May";
-    break;
-    case '06':
-    outMonth= "Jun";
-    break;
-    case '07':
-    outMonth= "Jul";
-    break;
-    case '08':
-    outMonth= "Aug";
-    break;
-    case '09':
-    outMonth= "Sep";
-    break;
-    case '10':
-    outMonth= "Oct";
-    break;
-    case '11':
-    outMonth= "Nov";
-    break;
-    case '12':
-    outMonth= "Dec";
-    break;
-}
-return outMonth;
+	    case '01':
+	    outMonth= "Jan";
+	    break;
+	    case '02':
+	    outMonth= "Feb";
+	    break;
+	    case '03':
+	    outMonth= "Mar";
+	    break;
+	    case '04':
+	    outMonth= "Apr";
+	    break;
+	    case '05':
+	    outMonth= "May";
+	    break;
+	    case '06':
+	    outMonth= "Jun";
+	    break;
+	    case '07':
+	    outMonth= "Jul";
+	    break;
+	    case '08':
+	    outMonth= "Aug";
+	    break;
+	    case '09':
+	    outMonth= "Sep";
+	    break;
+	    case '10':
+	    outMonth= "Oct";
+	    break;
+	    case '11':
+	    outMonth= "Nov";
+	    break;
+	    case '12':
+	    outMonth= "Dec";
+	    break;
+    }
+ return outMonth;
 }
 
 //function for expand button to display the discussions with correct and helpful answers
@@ -91,12 +91,12 @@ function expandDiscussion(id){
 	
 	var request = osapi.jive.core.discussions.get({id: id});
 	request.execute(function(response) { 
-	console.log("Expanding discussion response is " + JSON.stringify(response.data));
-	var discussionresult=response.data;
+	         console.log("Expanding discussion response is " + JSON.stringify(response.data));
+	         var discussionresult=response.data;
 		
 		if (response.error) {
 			console.log("Error in get: "+response.error.message);
-		    }
+		}
 		    
 		else{
 			myDate=response.data.creationDate.substr(0,10);                  
@@ -112,12 +112,12 @@ function expandDiscussion(id){
                         rootmessage +='</div>';				
 			rootmessage +='</div>';
 		
-			var request = response.data.messages.get( ) ;
+			var request = response.data.messages.get();
 			request.execute(function(response) {
 			var result = response.data;
 				if(!response.error) {
 					
-					 $.each(result, function(index, row) {
+				    $.each(result, function(index, row) {
 							console.log("Expanding discussion container response is " + JSON.stringify(response.data));
 							var count=0;
 							if(row.answer){
@@ -132,8 +132,8 @@ function expandDiscussion(id){
 									correctanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';									correctanswer +='<div class="root">'+row.content.text+ '</div	>';								
 									correctanswer +='</div>';
 							
-							     }
-							 if(row.helpful){
+							  }
+							  if(row.helpful){
 									myDate=row.creationDate.substr(0,10);                  
 									myDate=myDate.split("-"); 
 									dateM=myDate[1];
@@ -148,7 +148,7 @@ function expandDiscussion(id){
 							
 							  }
 					
-					      });
+					   });
 					discussionMessage +=rootmessage;
 					discussionMessage +=correctanswer;
 					discussionMessage +=helpfulanswer;
@@ -156,7 +156,7 @@ function expandDiscussion(id){
 					$(".content").show();
 					$(".content").html(discussionMessage);
 				
-				}
+				   }
 			
 			});
 		
@@ -175,23 +175,23 @@ function expandDocument(id){
 		var request = osapi.jive.core.documents.get({id: id});
 		var documentdata="";
 		request.execute(function(response) { 
-		console.log("Expanding document response is " + JSON.stringify(response.data));
-		var discussionresult=response.data;
-		var isBinaryDoc=0;
-		var myDate="";
-		try {
+		               console.log("Expanding document response is " + JSON.stringify(response.data));
+		               var discussionresult=response.data;
+		               var isBinaryDoc=0;
+		               var myDate="";
+		    try {
 			if (response.data.content.binary.ref) {
 				isBinaryDoc = 1;
-			}
+	                }
 			else {
 				isBinaryDoc = 0;
 			}	
-		}
-		catch (err) {
+		    }
+		    catch (err) {
 			isBinaryDoc = 0;
-		}
+		    }
 		
-			if (response.error) {
+		        if (response.error) {
 				console.log("Error in get: "+response.error.message);
 			}
 			else{
@@ -211,8 +211,8 @@ function expandDocument(id){
 					documentdata += 'Please click <a target="_app" href="'+response.data.resources.html.ref+'">here</a> to open the document</span></div>';
 					documentdata +='</div>';
 				  }
-				else
-				{
+				  else
+				  {
 					myDate=response.data.creationDate.substr(0,10);                  
 			                myDate=myDate.split("-"); 
 			                dateM=myDate[1];
@@ -226,11 +226,11 @@ function expandDocument(id){
 					documentdata +='<div class="answerborder">';
 					documentdata +='<span class="root">'+response.data.content.text +'</span></div>';				
                                         
-				}
-			 }
-			 $(".content").show();
-			 $(".content").html(documentdata);
-		});
+				  }
+			    }
+			    $(".content").show();
+			    $(".content").html(documentdata);
+		  });
 }
 
 //function for expand button to display the blog
@@ -259,7 +259,7 @@ function expandBlog(blogId, blogpostId){
 				       console.log("Post Post is"+JSON.stringify(response.data));
 				       if (response.error) {
 					   console.log("Error in get: "+response.error.message);
-				          }
+				        }
 				      else{
 				          myDate=response.data.creationDate.substr(0,10);                  
                                           myDate=myDate.split("-"); 
@@ -273,7 +273,7 @@ function expandBlog(blogId, blogpostId){
 					  blogdata +='</div>';							
 					  blogdata +='<div class="answerborder">';
 					  blogdata +='<span class="root">'+response.data.content.text +'</span></div>';	
-					  }
+					}
 					  $(".content").show();
 					  $(".content").html(blogdata);
 				   });
@@ -312,7 +312,7 @@ function search() {
        
         if (response.error) {
             alert(response.error.message);
-           }
+        }
         else {
             var html = "";
 	    var blog="";
@@ -376,7 +376,7 @@ function search() {
                  myDate=myDate.split("-"); 
                  dateM=myDate[1];
 		 var finalMonth=monthConvert(dateM);
-		  var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
+		 var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 		  
                              if(row.type=="discussion")
                	                {
@@ -384,17 +384,17 @@ function search() {
 				var discussionImage="";
 				if(isQuestion)
 				{
-				if(isAnswered != 0){
-				discussionImage +='<span class="jive-icon-med jive-icon-discussion-correct"></span>';
+				  if(isAnswered != 0){
+				   discussionImage +='<span class="jive-icon-med jive-icon-discussion-correct"></span>';
 								
-				 }
-				 else
-				 {
-				  discussionImage +='<span class="jive-icon-med jive-icon-discussion-question"></span>';
-				  }						
+				  }
+				  else
+				  {
+				    discussionImage +='<span class="jive-icon-med jive-icon-discussion-question"></span>';
+				   }						
 				}
 						
-		             else
+		                else
 				{
 				  discussionImage +='<span class="jive-icon-med jive-icon-discussion"></span>';
 				}
@@ -454,40 +454,40 @@ function search() {
                     		document +='</div>';
                     		document +='<br>';
                       
-                         }
+                          }
                
-		       if(row.type=="post")
-                          {
-  			var postDetailsId=row.resources.self.ref;
-			var blogSummaryId=row.blogSummary.resources.self.ref;
-			var blogId = (blogSummaryId.substring(blogSummaryId.lastIndexOf("/"))).substr(1);
-			var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
-			
-                    	 post +='<div id="div_'+postId+'" class="firstdiv"> ';
-			 post +='<ul>';
-                         post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
-                         post +='</ul>';
-                         post +='<ul>';
-                         post +='<span class="jive-icon-med image-button" id="post-'+postId+'/'+blogId+'" ></span>';                            
-                         post +='</ul>';
-                    
-		     	 post +='<div class="root1">'; 
-                         post +='<ul>';
-			 post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-			 post +='<li>Date:'+newDate+'</li>';                  
-                         post +='<li>Replies:'+replyCount+'</li>'; 
-                         post +='</ul>';
-			 post +='</div>';
-					
-			 post +='<div class="root">';    
-			 post +='<ul>';  
-                         post +='<div class="align">'+contentSummary+'</div>';  
-                         post +='</ul>';
-			 post +='</div>'; 
-                                    
-                         post +='</div>';          
-                         post +='<br>';              
-               }
+		          if(row.type=="post")
+                            {
+	  			var postDetailsId=row.resources.self.ref;
+				var blogSummaryId=row.blogSummary.resources.self.ref;
+				var blogId = (blogSummaryId.substring(blogSummaryId.lastIndexOf("/"))).substr(1);
+				var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
+				
+	                    	post +='<div id="div_'+postId+'" class="firstdiv"> ';
+				post +='<ul>';
+	                        post +='<span class="jive-icon-med jive-icon-blog"></span><li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+	                        post +='</ul>';
+	                        post +='<ul>';
+	                        post +='<span class="jive-icon-med image-button" id="post-'+postId+'/'+blogId+'" ></span>';                            
+	                        post +='</ul>';
+	                    
+			     	post +='<div class="root1">'; 
+	                        post +='<ul>';
+				post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+				post +='<li>Date:'+newDate+'</li>';                  
+	                        post +='<li>Replies:'+replyCount+'</li>'; 
+	                        post +='</ul>';
+				post +='</div>';
+						
+				post +='<div class="root">';    
+				post +='<ul>';  
+	                        post +='<div class="align">'+contentSummary+'</div>';  
+	                        post +='</ul>';
+				post +='</div>'; 
+	                                    
+	                        post +='</div>';          
+	                        post +='<br>';              
+	               }
                                   
             });
                        
