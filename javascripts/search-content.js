@@ -4,6 +4,7 @@ function init() {
       gadgets.window.adjustHeight();
 }
 
+//onhover event of expand icon
 $("span.image-button").live('hover', function () {
                 var curRowId = $(this).attr("id");
 	        if(curRowId.indexOf("DOC") != -1){
@@ -377,7 +378,7 @@ function search() {
                  dateM=myDate[1];
 		 var finalMonth=monthConvert(dateM);
 		 var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
-		  
+		 //checking whether it is a discussion,if discussion display the result of discussions along answered,helpful answered ,assumed answered discussions 
                              if(row.type=="discussion")
                	                {
 				var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
@@ -424,7 +425,7 @@ function search() {
 				discussion +='<br>';                
                            }
                
-               
+               //checks for document,if document displays all the documents in searchresult
 			 if(row.type=="document")
                            {
 				var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
@@ -455,7 +456,7 @@ function search() {
                     		document +='<br>';
                       
                           }
-               
+                   //checks for blog post,if blog post displays all the posts in searchresult
 		          if(row.type=="post")
                             {
 	  			var postDetailsId=row.resources.self.ref;
