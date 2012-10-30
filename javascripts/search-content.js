@@ -130,7 +130,8 @@ function expandDiscussion(id){
 									console.log("I'm inside expand if");
 									correctanswer +='<div class="answerborder">';								
 									correctanswer +='<div class="correct">Correct Answer</div> ';									
-									correctanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';									correctanswer +='<div class="root">'+row.content.text+ '</div	>';								
+									correctanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';									
+									correctanswer +='<span class="root">'+row.content.text+ '</span>';								
 									correctanswer +='</div>';
 							
 							  }
@@ -144,7 +145,7 @@ function expandDiscussion(id){
 									helpfulanswer +='<div class="answerborder">';							
 									helpfulanswer +='<div class="helpful">Helpful Answer </div>';								
 									helpfulanswer +='<div class="content-date"> by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+row.author.username+'>'+row.author.name+'</a> on '+newDate+'</div>';									
-									helpfulanswer +='<div class="root">'+row.content.text+ '</div>';								
+									helpfulanswer +='<span class="root">'+row.content.text+ '</span>';								
 									helpfulanswer +='</div>';
 							
 							  }
