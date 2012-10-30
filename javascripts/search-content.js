@@ -320,7 +320,7 @@ function search() {
         	var all1="";
         	var all2 ="";
         	var all3 ="";
-            var all ="'+all1+'+'+all2+'+'+all3'";
+            var all ="";
             var html = "";
 	    var blog="";
 	    var discussion="";
@@ -499,13 +499,13 @@ function search() {
             });
                 
              console.log(html);      
-	      all1 +=discussion;
-	      all2 +="<br>"+document;
-	      all3 +="<br>"+post;
+	      all +=discussion;
+	      all +="<br>"+document;
+	      all +="<br>"+post;
 	     $("#tabs-1").html(all);
-             $("#tabs-2").html(all1);
-             $("#tabs-3").html(all2);
-             $("#tabs-4").html(all3);           
+             $("#tabs-2").html(discussion);
+             $("#tabs-3").html(document);
+             $("#tabs-4").html(post);           
              $("#search-info").show();
              
              gadgets.window.adjustHeight();
