@@ -496,18 +496,17 @@ function search() {
             });
                 
              console.log(html);      
-             $(".content").html("");
-	     $('.firstdiv').css('background-color', '#FFFFFF');
-	     $('#div_'+id).css('background-color', '#F2F2F2');
 	     all +=discussion;
 	     all +="<br>"+document;
 	     all +="<br>"+post;
 	     all +='<div>';
-	     $("#tabs-1").html(all);             
-             $("#tabs-2").html(discussion);
-             $("#tabs-3").html(document);
-             $("#tabs-4").html(post);
+	       
+             $("#tabs-1").html(discussion);
+             $("#tabs-2").html(document);
+             $("#tabs-3").html(post);
+             $("#tabs-4").html(all);         
              $("#search-info").show();
+             
              gadgets.window.adjustHeight();
         }
     });
