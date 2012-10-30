@@ -22,6 +22,7 @@
      text-decoration:underline;
 }
 
+/* Image positions*/
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
      margin: -1px 5px 0 0;
@@ -68,6 +69,7 @@
      float: right;  
 }
 
+/* Border for search-result*/
 .withborder {
        border:0px;  
        top:5px;
@@ -80,8 +82,7 @@
        line-height:1;
 }
 
-
-
+/* Border for content*/
 .content{
      position:fixed;
      border:1px solid black;
@@ -106,16 +107,7 @@
      font-style:normal;
      font-size:12px;
 }
-
-.answerborder{
-      margin: 5px;
-      padding: 5px;
-      border: solid 1px #E5E5FF;
-      background: #EEEEEE;
-      font-size:90%;
-      color: black
-}
-
+/* border for root content*/
 .rootborder{
       margin: 5px;
       padding: 5px;
@@ -126,6 +118,17 @@
       padding: 0 0;
 }
 
+/* border for subcontent under root content*/
+.answerborder{
+      margin: 5px;
+      padding: 5px;
+      border: solid 1px #E5E5FF;
+      background: #EEEEEE;
+      font-size:90%;
+      color: black
+}
+
+/*Date format,anchor styling in content border*/
 .content-date
 {
      font-size:12px;
@@ -141,7 +144,7 @@
       text-decoration:underline;
 }
      
-
+/* background color change of each div content displayed in the search result by onclick event of expand icon*/
 .firstdiv{
      background:white;
      position:relative;
@@ -154,6 +157,7 @@
      font-family:"Times New Roman";
      color:black;
      line-height: 1.5em;
+     margin-left:0.5cm;
  }
  
 .root1{
@@ -190,8 +194,3 @@
       font-family:"Times New Roman";
       line-height: 1.5em;
 }
-
-.align {
-       margin-left:0.5cm;
-}
-
