@@ -492,21 +492,17 @@ function search() {
 	                        post +='</div>';          
 	                        post +='<br>';              
 	               }
-	           if(row.type=="discussion"  && row.type=="document" && row.type=="post")
-	           {           	
-	           	 all +=discussion;
-	                 all +="<br>"+document;
-	                 all +="<br>"+post;
-	       
-	           }
+	        
             });
                 
              console.log(html);      
-	     
-             $("#tabs-1").html(discussion);
-             $("#tabs-2").html(document);
-             $("#tabs-3").html(post);
-             $("#tabs-4").html(all);         
+	      all +=discussion;
+	      all +="<br>"+document;
+	      all +="<br>"+post;
+	     $("#tabs-1").html(all);   
+             $("#tabs-2").html(discussion);
+             $("#tabs-3").html(document);
+             $("#tabs-4").html(post);           
              $("#search-info").show();
              
              gadgets.window.adjustHeight();
