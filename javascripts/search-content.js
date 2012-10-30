@@ -317,6 +317,7 @@ function search() {
             alert(response.error.message);
         }
         else {
+            var All ="";
             var html = "";
 	    var blog="";
 	    var discussion="";
@@ -493,12 +494,15 @@ function search() {
 	               }
                                   
             });
-                       
-                 
-             console.log(html);
-             $("#tabs-1").html(discussion);
-             $("#tabs-2").html(document);
-             $("#tabs-3").html(post);
+                
+             console.log(html);      
+             All +=discussion;
+	     All +="<br>"+document;
+	     All +="<br>"+post;
+	     $("#tabs-1").html(all);             
+             $("#tabs-2").html(discussion);
+             $("#tabs-3").html(document);
+             $("#tabs-4").html(post);
              $("#search-info").show();
              gadgets.window.adjustHeight();
         }
