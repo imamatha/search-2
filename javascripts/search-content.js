@@ -321,6 +321,10 @@ function search() {
         	var all1="";
         	var all2 ="";
         	var all3 ="";
+        	var discussionID="";
+        	var docID="";
+        	var postId="";
+        	
             var all ="";
             var html = "";
 	    var blog="";
