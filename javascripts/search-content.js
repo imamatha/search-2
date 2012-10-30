@@ -320,7 +320,7 @@ function search() {
         	var all1="";
         	var all2 ="";
         	var all3 ="";
-            var all ="all1+all2+all3";
+            var all ="'+all1+'+'+all2+'+'+all3'";
             var html = "";
 	    var blog="";
 	    var discussion="";
