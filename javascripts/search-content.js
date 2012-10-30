@@ -412,8 +412,8 @@ function search() {
 				discussion +='<div class="root1">';  
                     		discussion +='<ul>';                   
                     		discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-				discussion +='<li>Date:'+newDate+'</li>';                    
-                    		discussion +='<li>Replies:'+replyCount+'</li>'; 
+				discussion +='&npsb <li>Date:'+newDate+'</li>';                    
+                    		discussion +='&npsb <li>Replies:'+replyCount+'</li>'; 
                     		discussion +='</ul>';
 				discussion +='</div>';
 					
