@@ -294,6 +294,12 @@ function expandBlog(blogId, blogpostId){
 
 }
 
+function expandAll(id)
+{
+var AllID=
+
+}
+
 // Perform a search and display the results
 function search() {
     
@@ -498,10 +504,14 @@ function search() {
 	        
             });
                 
-             console.log(html);      
-	      all +=discussion;
-	      all +="<br>"+document;
-	      all +="<br>"+post;
+             console.log(html);  
+             all1 +='<div id="div_'+discussionID+'" class="firstdiv">';
+             all2 +='<div id="div_'+docID+'" class="firstdiv"> ';
+             all3 +='<div id="div_'+postId+'" class="firstdiv"> ';
+             
+	      all +=discussion+all1;
+	      all +="<br>"+document+all2;
+	      all +="<br>"+post+all3;
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
