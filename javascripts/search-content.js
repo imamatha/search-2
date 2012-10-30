@@ -321,9 +321,13 @@ function search() {
         	var all1="";
         	var all2 ="";
         	var all3 ="";
-        	var discussionID="";
-        	var docID="";
-        	var postId="";
+        	var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
+        	var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
+                var postDetailsId=row.resources.self.ref;
+	        var blogSummaryId=row.blogSummary.resources.self.ref;
+	        var blogId = (blogSummaryId.substring(blogSummaryId.lastIndexOf("/"))).substr(1);
+	        var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
+				
         	
             var all ="";
             var html = "";
