@@ -321,13 +321,6 @@ function search() {
         	var all1="";
         	var all2 ="";
         	var all3 ="";
-        	var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
-        	var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
-                var postDetailsId=row.resources.self.ref;
-	        var blogSummaryId=row.blogSummary.resources.self.ref;
-	        var blogId = (blogSummaryId.substring(blogSummaryId.lastIndexOf("/"))).substr(1);
-	        var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
-				
         	
             var all ="";
             var html = "";
@@ -508,13 +501,10 @@ function search() {
             });
                 
              console.log(html);  
-             all1 +='<div id="div_'+discussionID+'" class="firstdiv">';
-             all2 +='<div id="div_'+docID+'" class="firstdiv"> ';
-             all3 +='<div id="div_'+postId+'" class="firstdiv"> ';
-             
-	      all +=discussion+all1;
-	      all +="<br>"+document+all2;
-	      all +="<br>"+post+all3;
+  
+	      all +=discussion;
+	      all +="<br>"+document;
+	      all +="<br>"+post;
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
