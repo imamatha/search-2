@@ -492,7 +492,7 @@ function search() {
 	                        post +='</div>';          
 	                        post +='<br>';              
 	               }
-	           if(row.type="discussion"  AND row.type="document" AND row.type="post")
+	           if(row.type=="discussion"  && row.type=="document" && row.type=="post")
 	           {
 	           	all +='<div id="div_'+discussionID+'" class="firstdiv">'; 
 	           	all +='<div id="div_'+postId+'" class="firstdiv"> ';
