@@ -317,7 +317,7 @@ function search() {
             alert(response.error.message);
         }
         else {
-            var All ="";
+            var all ="";
             var html = "";
 	    var blog="";
 	    var discussion="";
@@ -496,10 +496,10 @@ function search() {
             });
                 
              console.log(html);      
-             All +=discussion;
-	     All +="<br>"+document;
-	     All +="<br>"+post;
-	     $("#tabs-1").html(All);             
+             all +=discussion;
+	     all +="<br>"+document;
+	     all +="<br>"+post;
+	     $("#tabs-1").html(all);             
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
              $("#tabs-4").html(post);
