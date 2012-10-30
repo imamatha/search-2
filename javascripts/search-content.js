@@ -318,9 +318,8 @@ function search() {
             alert(response.error.message);
         }
         else {
-        	var all1="";
-        	var all2 ="";
-        	var all3 ="";
+        	var all1 ="";
+        	
         	
             var all ="";
             var html = "";
@@ -500,11 +499,13 @@ function search() {
 	        
             });
                 
-             console.log(html);  
+             console.log(html); 
+            
   
-	      all +=discussion;
-	      all +="<br>"+document;
-	      all +="<br>"+post;
+	      all1 +=discussion;
+	      all1 +="<br>"+document;
+	      all1 +="<br>"+post;
+	      all +=all1;
 	     $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);
              $("#tabs-3").html(document);
