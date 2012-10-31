@@ -24,10 +24,6 @@ $("span.image-button").live('hover', function () {
 			console.log("i'm in else section");
 			expandDiscussion(curRowId);
 		}
-		else
-		{
-			expandall();	
-		}
 
  });
     
@@ -513,11 +509,11 @@ function search() {
             });  
               
 	     
-	      all +=discussion;   
-	      all +=document;	 
-	      all +=post;
+	      all1 +=discussion;   
+	      all2 +=document;	 
+	      all3 +=post;
 	     
-             
+             all +=all1+all2+all3;
              $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);                   
              $("#tabs-3").html(document);              
