@@ -76,13 +76,7 @@ $("span.image-button").live('hover', function () {
     }
  return outMonth;
 }
-function expandall(){
-	function expandDiscussion(id);
-        function expandDocument(id);
-        function expandBlog(blogId, blogpostId);
-}
-        
-        
+       
 //function for expand button to display the discussions with correct and helpful answers
 function expandDiscussion(id){
 
