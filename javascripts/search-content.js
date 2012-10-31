@@ -513,7 +513,7 @@ function search() {
 	     
              all +=all1+all2+all3;
              $("#tabs-1").html(all);
-             $('#tabs-1").removeAttr('disabled');        
+             $('#tabs-1').removeAttr('disabled');        
              $("#tabs-2").html(all1);            
              $("#tabs-3").html(all2);              
              $("#tabs-4").html(all3);             
