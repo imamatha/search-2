@@ -506,11 +506,11 @@ function search() {
 	      all +=all1;
 	      all +=all2;
 	      all +=all3;
-	     $("#tabs-1").html(all);
-             $("#tabs-2").html(all1);
-             $("#tabs-3").html(all2);
-             '<div id="div_'+postId+'" class="firstdiv"> ';
-             $("#tabs-4").html(all3); 
+	   
+             $("#tabs-1").html(all1);
+             $("#tabs-2").html(all2);     
+             $("#tabs-3").html(all3); 
+             $("#tabs-4").html(all);
              '</div>';
              $("#search-info").show();
              
