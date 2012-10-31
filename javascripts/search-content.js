@@ -501,19 +501,17 @@ function search() {
 
             });  
               
-	      var discussionID;
-	      var docID ;				
-	      var postId;
-	      discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
-	      document +='<div id="div_'+docID+'" class="firstdiv"> ';
-	      post +='<div id="div_'+postId+'" class="firstdiv"> ';
+	     
 	      all +=discussion;   
 	      all +=document;	 
 	      all +=post;
 	     
             
              $("#tabs-1").html(all);
-             $("#tabs-2").html(discussion);     
+             $("#tabs-2").html(discussion).mouseover(function () {
+              $(this).css("color","red");
+               });
+    
              $("#tabs-3").html(document);              
              $("#tabs-4").html(post);
              
