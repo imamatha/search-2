@@ -501,8 +501,8 @@ function search() {
             });  
               
 	      all1 +=discussion;   
-	      all2 +="<br>"+document;	 
-	      all3 +="<br>"+post;	    
+	      all2 +=document;	 
+	      all3 +=post;	    
 	    
 	   
              $("#tabs-1").html(all1);
