@@ -500,14 +500,15 @@ function search() {
 
             });  
               
-	      all1 +=discussion;   
-	      all2 +=document;	 
-	      all3 +=post;	    
+	   
 	    
 	   
              $("#tabs-1").html(all1);
              $("#tabs-2").html(all2);     
              $("#tabs-3").html(all3); 
+              all1 +=discussion;   
+	      all2 +=document;	 
+	      all3 +=post;	    
               all +=all1;
 	      all +="<br>"+all2;
 	      all +="<br>"+all3;
