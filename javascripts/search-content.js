@@ -174,7 +174,7 @@ function expandDocument(id){
 	$('.firstdiv').css('background-color', '#FFFFFF');
 	$('#div_'+id).css('background-color', '#F2F2F2');
        //  $('#div_'+id).css({"background-color":"#F2F2F2","background-repeat": "no-repeat"});
-        $('#div_'+id').removeAttr('disabled');
+        $('#div_'+id).removeAttr('disabled');
 		console.log("You are in document section id ::"+id);
 		var request = osapi.jive.core.documents.get({id: id});
 		var documentdata="";
