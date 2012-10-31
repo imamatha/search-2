@@ -30,9 +30,9 @@ $("span.image-button").live('hover', function () {
  //function for tabs   
  $(function() {
          $( "#tabs" ).tabs();
-         $("#expandDiscussion(id)");
-         $("#expandDocument(id)");
-        $("#expandBlog(blogId, blogpostId)");
+        expandDiscussion(id);
+        expandDocument(id);
+        expandBlog(blogId, blogpostId);
  });
    
 //function for date format
