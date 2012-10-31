@@ -432,7 +432,8 @@ function search() {
                     	        discussion +='</ul>';
 				discussion +='</div>';				                
 				discussion +='</div>';
-				discussion +='<br>';                
+				discussion +='<br>';  
+				all +=discussion;
                            }
                
                //checks for document,if document displays all the documents in searchresult
@@ -464,6 +465,7 @@ function search() {
                                        
                     		document +='</div>';
                     		document +='<br>';
+                    		all +=document;
                       
                           }
                    //checks for blog post,if blog post displays all the posts in searchresult
@@ -497,17 +499,18 @@ function search() {
 				post +='</div>'; 
 	                                    
 	                        post +='</div>';          
-	                        post +='<br>';              
+	                        post +='<br>';
+	                        all +=post
 	               }
 
             });  
               
 	     
-	      all1 +=discussion;   
-	      all2 +=document;	 
-	      all3 +=post;
+	     // all1 +=discussion;   
+	      //all2 +=document;	 
+	     // all3 +=post;
 	     
-             all +=all1+all2+all3;
+             //all +=all1+all2+all3;
              $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);                   
              $("#tabs-3").html(document);              
