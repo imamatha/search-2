@@ -512,7 +512,6 @@ function search() {
 	      all +=all2;
 	      all +=all3;
              $("#tabs-4").html(all);
-             '</div>';
              $("#search-info").show();
              
              gadgets.window.adjustHeight();
