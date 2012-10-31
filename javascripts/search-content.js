@@ -508,9 +508,9 @@ function search() {
 	      all +=post;	    
             
              $("#tabs-1").html(all);
-             $("#tabs-2").html(all1);     
-             $("#tabs-3").html(all2);              
-             $("#tabs-4").html(all3);
+             $("#tabs-2").html(discussion);     
+             $("#tabs-3").html(document);              
+             $("#tabs-4").html(post);
              
              $("#search-info").show();
              
