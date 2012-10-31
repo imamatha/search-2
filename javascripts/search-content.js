@@ -502,10 +502,13 @@ function search() {
             });  
               
 	   
-	    
+	      discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
+	      document +='<div id="div_'+docID+'" class="firstdiv"> ';
+	      post +='<div id="div_'+postId+'" class="firstdiv"> ';
 	      all +=discussion;   
 	      all +=document;	 
-	      all +=post;	    
+	      all +=post;
+	     
             
              $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);     
