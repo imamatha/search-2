@@ -172,7 +172,8 @@ function expandDiscussion(id){
 function expandDocument(id){
 	$(".content").html("");
 	$('.firstdiv').css('background-color', '#FFFFFF');
-	$('#div_'+id).css('background-color', '#F2F2F2');
+//	$('#div_'+id).css('background-color', '#F2F2F2');css({"propertyname":"value","propertyname":"value",...});
+         $('#div_'+id).css({"background-color":"#F2F2F2","background-repeat": "no-repeat"});
 		console.log("You are in document section id ::"+id);
 		var request = osapi.jive.core.documents.get({id: id});
 		var documentdata="";
