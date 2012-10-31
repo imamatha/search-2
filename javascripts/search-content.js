@@ -30,7 +30,7 @@ $("span.image-button").live('mouseover', function () {
  //function for tabs   
  $(function() {
          $( "#tabs" ).tabs();
-         gadgets.window.adjustHeight();
+        
  });
    
 //function for date format
@@ -320,7 +320,7 @@ function search() {
             alert(response.error.message);
         }
         else {
-        	var all1 ="";
+               var all1 ="";
                var all2 ="";
                var all3 ="";
                var all4 ="";
