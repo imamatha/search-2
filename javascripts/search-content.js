@@ -509,8 +509,10 @@ function search() {
 	     
             
              $("#tabs-1").html(all);
-             $("#tabs-2").html(discussion);
+             $("#tabs-2").html(discussion){
              $('#div_'+id).css('background-color', '#F2F2F2');
+             
+             };
              $("#tabs-3").html(document);              
              $("#tabs-4").html(post);
              
