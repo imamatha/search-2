@@ -509,7 +509,10 @@ function search() {
 	     
             
              $("#tabs-1").html(all);
+             $("span.image-button").live('click', function ()
+             {
              $("#tabs-2").html(discussion);                     
+             });
              $("#tabs-3").html(document);              
              $("#tabs-4").html(post);             
              $("#search-info").show();
