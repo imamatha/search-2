@@ -503,13 +503,10 @@ function search() {
               
 	   
 	    
-	      all1 +=discussion;   
-	      all2 +=document;	 
-	      all3 +=post;	    
-              all4 +=all1;
-	      all4 +="<br>"+all2;
-	      all4 +="<br>"+all3;
-	      all  +=all4;
+	      all +=discussion;   
+	      all +=document;	 
+	      all +=post;	    
+            
              $("#tabs-1").html(all);
              $("#tabs-2").html(all1);     
              $("#tabs-3").html(all2);              
