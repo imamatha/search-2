@@ -174,7 +174,6 @@ function expandDocument(id){
 	$('.firstdiv').css('background-color', '#FFFFFF');
 	$('#div_'+id).css('background-color', '#F2F2F2');
        //  $('#div_'+id).css({"background-color":"#F2F2F2","background-repeat": "no-repeat"});
-        $('#div_'+id).removeAttr('disabled');
 		console.log("You are in document section id ::"+id);
 		var request = osapi.jive.core.documents.get({id: id});
 		var documentdata="";
@@ -514,7 +513,8 @@ function search() {
 	     
              all +=all1+all2+all3;
              $("#tabs-1").html(all);
-             $("#tabs-2").html(all1);                   
+             $('#tabs-1").removeAttr('disabled');        
+             $("#tabs-2").html(all1);            
              $("#tabs-3").html(all2);              
              $("#tabs-4").html(all3);             
              $("#search-info").show();
