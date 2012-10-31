@@ -509,7 +509,7 @@ function search() {
             
              $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);    
-             $("#tabs-3").html(document);              
+             $("#tabs-3").html(document){ expandDocument(docID);};              
              $("#tabs-4").html(post);
              
              $("#search-info").show();
