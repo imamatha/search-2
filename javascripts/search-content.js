@@ -509,8 +509,8 @@ function search() {
              $("#tabs-2").html(all2);     
              $("#tabs-3").html(all3); 
               all +=all1;
-	      all +=all2;
-	      all +=all3;
+	      all +="<br>"+all2;
+	      all +="<br>"+all3;
              $("#tabs-4").html(all);
              $("#search-info").show();
              
