@@ -501,7 +501,9 @@ function search() {
 
             });  
               
-	   
+	      var discussionID = (url.substring(url.lastIndexOf("/"))).substr(1);
+	      var docID = (url.substring(url.lastIndexOf("-"))).substr(1);				
+	      var postId = (postDetailsId.substring(postDetailsId.lastIndexOf("/"))).substr(1);
 	      discussion +='<div id="div_'+discussionID+'" class="firstdiv">';
 	      document +='<div id="div_'+docID+'" class="firstdiv"> ';
 	      post +='<div id="div_'+postId+'" class="firstdiv"> ';
