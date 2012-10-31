@@ -30,6 +30,10 @@ $("span.image-button").live('hover', function () {
  //function for tabs   
  $(function() {
         $( "#tabs" ).tabs();
+         expandDocument(docID);
+         expandBlog(finalBlogId,blogpostId);
+         expandDiscussion(curRowId);
+        
  });
    
 //function for date format
