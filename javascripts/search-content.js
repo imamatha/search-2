@@ -499,17 +499,18 @@ function search() {
 	               }
 
             });  
-              var postId="";
+              
 	      all1 +=discussion;   
 	      all2 +="<br>"+document;	 
 	      all3 +="<br>"+post;	    
-	      all +=all1;
-	      all +=all2;
-	      all +=all3;
+	    
 	   
              $("#tabs-1").html(all1);
              $("#tabs-2").html(all2);     
              $("#tabs-3").html(all3); 
+              all +=all1;
+	      all +=all2;
+	      all +=all3;
              $("#tabs-4").html(all);
              '</div>';
              $("#search-info").show();
