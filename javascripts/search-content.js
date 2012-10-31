@@ -321,6 +321,7 @@ function search() {
         	var all1 ="";
                var all2 ="";
                var all3 ="";
+               var all4 ="";
         	
             var all ="";
             var html = "";
@@ -502,12 +503,13 @@ function search() {
               
 	   
 	    
-	       all1 +=discussion;   
+	      all1 +=discussion;   
 	      all2 +=document;	 
 	      all3 +=post;	    
-              all +=all1;
-	      all +="<br>"+all2;
-	      all +="<br>"+all3;
+              all4 +=all1;
+	      all4 +="<br>"+all2;
+	      all4 +="<br>"+all3;
+	      all  +=all4;
              $("#tabs-1").html(all);
              $("#tabs-2").html(all1);     
              $("#tabs-3").html(all2);              
