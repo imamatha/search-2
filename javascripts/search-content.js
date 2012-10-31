@@ -24,6 +24,10 @@ $("span.image-button").live('hover', function () {
 			console.log("i'm in else section");
 			expandDiscussion(curRowId);
 		}
+		else
+		{
+			expandall();	
+		}
 
  });
     
@@ -76,7 +80,13 @@ $("span.image-button").live('hover', function () {
     }
  return outMonth;
 }
-
+function expandall(){
+	function expandDiscussion(id);
+        function expandDocument(id);
+        function expandBlog(blogId, blogpostId);
+}
+        
+        
 //function for expand button to display the discussions with correct and helpful answers
 function expandDiscussion(id){
 
@@ -507,7 +517,7 @@ function search() {
 	      all +=document;	 
 	      all +=post;
 	     
-            
+             
              $("#tabs-1").html(all);
              $("#tabs-2").html(discussion);                   
              $("#tabs-3").html(document);              
