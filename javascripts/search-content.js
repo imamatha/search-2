@@ -29,11 +29,10 @@ $("span.image-button").live('hover', function () {
     
  //function for tabs   
  $(function() {
-        $( "#tabs" ).tabs();
-         expandDocument(docID);
-         expandBlog(finalBlogId,blogpostId);
-         expandDiscussion(curRowId);
-        
+         $( "#tabs" ).tabs();
+         $("#expandDiscussion(id)");
+         $("#expandDocument(id)");
+        $("#expandBlog(blogId, blogpostId)");
  });
    
 //function for date format
