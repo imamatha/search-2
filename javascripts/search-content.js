@@ -5,7 +5,7 @@ function init() {
 }
 
 //onhover event of expand icon
-$("span.image-button").live('hover', function () {
+$("span.image-button").live('mouseover', function () {
                 var curRowId = $(this).attr("id");
 	        if(curRowId.indexOf("DOC") != -1){
 	           var docID = (curRowId.substring(curRowId.lastIndexOf("-"))).substr(1);
