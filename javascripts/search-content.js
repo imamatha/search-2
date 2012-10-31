@@ -508,10 +508,7 @@ function search() {
 	     
             
              $("#tabs-1").html(all);
-             $("#tabs-2").html(discussion).mouseover(function () {
-              $(this).css("color","red");
-               });
-    
+             $("#tabs-2").html(discussion);    
              $("#tabs-3").html(document);              
              $("#tabs-4").html(post);
              
