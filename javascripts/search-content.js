@@ -506,8 +506,7 @@ function search() {
 	               }
 
             });  
-              
-	     
+
 	      all1 +=discussion;   
 	      all2 +=document;	 
 	      all3 +=post;
