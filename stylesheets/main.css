@@ -153,6 +153,7 @@
 }
 
 .root{
+    position:absolute;
      font-size:12px;
      font-family:"Times New Roman";
      color:black;
