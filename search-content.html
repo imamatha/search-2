@@ -19,7 +19,7 @@
  
         //this is the jQuery animate function to fixed the div position after scrolling.
 
-                    $('#floatDiv').animate({top:set},{duration:1000,queue:false});
+                    $('#float').animate({top:set},{duration:1000,queue:false});
 
                 });
 
@@ -28,15 +28,23 @@
          </script>
 
     <style type="text/css">
-
-    body .content{
-        height:6000px !important;
-      
-        overflow:auto;
-    }
- body  .content #floatDiv {
+   .content #float{
+     position:fixed;
+     border:1px solid black;
+     border-color:#A0A0A0;
+     top:150px;
+     left:50.5%;
+     right:270px;
+     bottom:10px;
+     width:47%;
+     padding:10px;
+     display:inline;
+     -webkit-border-radius:25px;
+     -moz-border-radius: 25px;
+     border-radius: 25px;
+      height:6000px !important;
+      overflow:auto;
         position:absolute;
-        left:50%;
         margin-top:200px;
         margin-left:-200px;
         width:200px;
@@ -82,7 +90,7 @@
 <p id="search-results"></p>
 
 <div class="content">
-<div id="floatDiv">
+<div id="float">
 </div></div>
 
 </div>
