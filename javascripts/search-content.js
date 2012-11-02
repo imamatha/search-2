@@ -169,6 +169,7 @@ function expandDiscussion(id){
 
 }
 
+
 //function for expand button to display the documents
 function expandDocument(id){
 	$(".content").html("");
@@ -294,8 +295,28 @@ function expandBlog(blogId, blogpostId){
 		});
 	});
 
-}
 
+
+var scroller = new StickyScroller("content",
+        {
+            start: 300,
+            end: 1800,
+            interval: 300,
+            range: 100,
+            margin: 100
+        });
+        
+scroller.getStart(); //300
+scroller.getEnd(); //1800
+scroller.getInterval();//300
+scroller.getRange(); //100
+scroller.getMargin();//100
+
+//Additionally, you can get the current index and previous index
+
+scroller.getIndex();
+scroller.getOldIndex();
+}
 
 // Perform a search and display the results
 function search() {
