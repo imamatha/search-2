@@ -84,7 +84,7 @@
 
 
 /* Border for content*/
-/*.content{
+.content{
       position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
@@ -98,16 +98,15 @@
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
      border-radius: 25px;
-}*/
+      height:6000px !important;
+      overflow:auto;
+   
+}
 
-body .content{
-        height:6000px !important;
-        background-color:yellow;
-        overflow:auto;
-    }
+       
 .content #floatDiv {
         position:absolute;
-        left:50.5%;
+        left:50%;
         margin-top:200px;
         margin-left:-200px;
         width:200px;
