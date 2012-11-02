@@ -3,6 +3,19 @@ function init() {
       $("#search").click(search);
       gadgets.window.adjustHeight();
 }
+var tempScrollTop, currentScrollTop = 0;
+
+$(".content").scroll(function(){
+
+currentScrollTop = $("#div").scrollTop();
+
+if (tempScrollTop < currentScrollTop )
+//scrolling down
+else if (tempScrollTop > currentScrollTop )
+//scrolling up
+
+tempScrollTop = currentScrollTop;
+}
 
 //onhover event of expand icon
 $("span.image-button").live('mouseover', function () {
