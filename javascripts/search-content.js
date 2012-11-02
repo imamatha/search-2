@@ -9,9 +9,9 @@ $(".content").scroll(function(){
 
 currentScrollTop = $("#div").scrollTop();
 
-if (tempScrollTop < currentScrollTop )
+if (tempScrollTop < currentScrollTop ){}
 //scrolling down
-else if (tempScrollTop > currentScrollTop )
+else if (tempScrollTop > currentScrollTop){}
 //scrolling up
 
 tempScrollTop = currentScrollTop;
