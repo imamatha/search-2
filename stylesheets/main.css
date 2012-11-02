@@ -84,10 +84,6 @@
 
 /* Border for content*/
 .content{
-      bottom: 0;
-     clear: both;
-     height: 120px;
-     z-index: 50000;
       position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
