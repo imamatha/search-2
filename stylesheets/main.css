@@ -84,8 +84,8 @@
 
 
 /* Border for content*/
-/*.content{
-      position:fixed;
+.content{
+     position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
      top:150px;
@@ -106,12 +106,7 @@
        
 .content #floatDiv {
         position:absolute;
-        left:50%;
-        margin-top:200px;
-        margin-left:-200px;
-        width:200px;
-        height:200px;
-    }*/
+    }
 
 .content ul li {
      display: inline;
