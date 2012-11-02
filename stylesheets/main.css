@@ -84,7 +84,7 @@
 
 /* Border for content*/
 .content{
-     /*position:fixed;*/
+     position:fixed;
      position:scroll;  
      border:1px solid black;
      border-color:#A0A0A0;
