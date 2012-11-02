@@ -82,6 +82,7 @@
        line-height:1;
 }
 
+
 /* Border for content*/
 .content{
       position:fixed;
@@ -96,8 +97,18 @@
      display:inline;
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
-     border-radius: 25px
+     border-radius: 25px;
+       height:6000px !important;
+        overflow:auto;
 }
+.content #floatDiv {
+        position:absolute;
+        left:50.5%;
+        margin-top:200px;
+        margin-left:-200px;
+        width:200px;
+        height:200px;
+    }
 
 .content ul li {
      display: inline;
