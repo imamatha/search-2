@@ -70,7 +70,7 @@
 
 /* Border for search-result*/
 .withborder {
-       position: relative;
+      
        border:0px;  
        top:5px;
        left:1px;
@@ -83,7 +83,7 @@
 
 /* Border for content*/
 #content{
-     position: fixed;
+    
      border:1px solid black;
      border-color:#A0A0A0;
      top:150px;
