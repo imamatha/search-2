@@ -75,8 +75,8 @@
        top:5px;
        left:1px;
        width:50%;
+       bottom:2px;
        padding:1px
-       width:50%;
        border-color: rgb(160,160,160);
        line-height:1;
 }
@@ -89,14 +89,12 @@
      top:150px;
      left:50.5%;
      right:270px;
-     bottom:5px;
+     bottom:2px;
      width:47%;
      padding:10px;
      display:inline;
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
-     border-radius: 25px;
-     margin-top: -10px;
      
 }
 
