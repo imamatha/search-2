@@ -21,12 +21,6 @@
 .search-results ul li a:hover{
      text-decoration:underline;
 }
-
-
-       
-
-
-
 /* Image positions*/
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
@@ -106,7 +100,7 @@
      margin-top: -10px;
      
 }
-/*
+
 #content ul li {
      display: inline;
      padding: .1em 2em;
@@ -114,7 +108,7 @@
      font-family:"Times New Roman";
      font-style:normal;
      font-size:12px;
-}*/
+}
 /* border for root content*/
 .rootborder{
       margin: 5px;
