@@ -19,11 +19,11 @@ function init() {
 //	    };
 //	});
 //	});
-$( document ).ready( function ()
-			{
-				$( '#content' ).scrollFollow();
-			}
-		);
+//$( document ).ready( function ()
+//			{
+//				$( '#content' ).scrollFollow();
+//			}
+//		);
       
 //onhover event of expand icon
 $("span.image-button").live('mouseover', function () {
