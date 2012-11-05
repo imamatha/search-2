@@ -22,9 +22,9 @@
      text-decoration:underline;
 }
 
-#search-info { 
-  position: relative; 
-}
+
+       
+
 
 
 /* Image positions*/
@@ -103,6 +103,7 @@
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
      border-radius: 25px;
+     margin-top: -10px;
      
 }
 /*
