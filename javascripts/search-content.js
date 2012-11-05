@@ -4,21 +4,21 @@ function init() {
       gadgets.window.adjustHeight();
 }
 	
-	$(function () {
-	var offset = $("#content").offset();
-	var topPadding = 5;
-	$(window).scroll(function () {
-	    if ($(window).scrollTop() > offset.top) {
-	        $("#content").stop().animate({
-	            marginTop: $(window).scrollTop() - offset.top + topPadding
-	        });
-	    } else {
-	        $("#content").stop().animate({
-	            marginTop: 0
-	        });
-	    };
-	});
-	});
+//	$(function () {
+//	var offset = $("#content").offset();
+//	var topPadding = 5;
+//	$(window).scroll(function () {
+//	    if ($(window).scrollTop() > offset.top) {
+//	        $("#content").stop().animate({
+//	            marginTop: $(window).scrollTop() - offset.top + topPadding
+//	        });
+//	    } else {
+//	        $("#content").stop().animate({
+//	            marginTop: 0
+//	        });
+//	    };
+//	});
+//	});
       
 //onhover event of expand icon
 $("span.image-button").live('mouseover', function () {
