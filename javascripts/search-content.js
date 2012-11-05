@@ -7,7 +7,7 @@ $(function() {
 
     var $content  = $("#content"), 
         $window    = $(window),
-        offset     = $sidebar.offset(),
+        offset     = $content.offset(),
         topPadding = 15;
 
     $window.scroll(function() {
