@@ -81,7 +81,7 @@ $("span.image-button").live('mouseover', function () {
 //function for expand button to display the discussions with correct and helpful answers
 function expandDiscussion(id){
 
-	$(".content").html("");
+	$("#content").html("");
 	$('.firstdiv').css('background-color', '#FFFFFF');
 	$('#div_'+id).css('background-color', '#F2F2F2');
 	console.log("Expand Row Id::: "+ id);
@@ -156,8 +156,8 @@ function expandDiscussion(id){
 					discussionMessage +=correctanswer;
 					discussionMessage +=helpfulanswer;
 					console.log("Html Content:: "+discussionMessage);
-					$(".content").show();
-					$(".content").html(discussionMessage);
+					$("#content").show();
+					$("#content").html(discussionMessage);
 				
 				   }
 			
