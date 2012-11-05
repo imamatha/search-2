@@ -3,29 +3,7 @@ function init() {
       $("#search").click(search);
       gadgets.window.adjustHeight();
 }
-$(document).scroll(function(){
-    $('#content').css('top', $(document).scrollTop());
-})
-$(function() {
 
-    var $content  = $("#content"), 
-        $window    = $(window),
-        offset     = $content.offset(),
-        topPadding = 15;
-
-    $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $content.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
-            });
-        } else {
-            $content.stop().animate({
-                marginTop: 0
-            });
-        }
-    });
-    
-});
 //onhover event of expand icon
 $("span.image-button").live('mouseover', function () {
                 var curRowId = $(this).attr("id");
