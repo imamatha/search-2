@@ -74,8 +74,8 @@
        top:5px;
        left:1px;
        width:50%;
-       bottom:10px;
-       padding:1px*/
+       bottom:1px;
+       padding:1px
        width:50%;
        border-color: rgb(160,160,160);
        line-height:1;
@@ -89,6 +89,7 @@
      top:150px;
      left:50.5%;
      right:270px;
+       bottom:1px;
      width:47%;
      padding:10px;
      display:inline;
