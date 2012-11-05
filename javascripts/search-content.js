@@ -6,7 +6,7 @@ function init() {
 	
 	$(function () {
 	var offset = $("#content").offset();
-	var topPadding = 15;
+	var topPadding = 5;
 	$(window).scroll(function () {
 	    if ($(window).scrollTop() > offset.top) {
 	        $("#content").stop().animate({
