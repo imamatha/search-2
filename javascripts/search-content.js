@@ -3,6 +3,9 @@ function init() {
       $("#search").click(search);
       gadgets.window.adjustHeight();
 }
+$(document).scroll(function(){
+    $('#content').css('top', $(document).scrollTop());
+})
 $(function() {
 
     var $content  = $("#content"), 
