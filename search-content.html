@@ -9,9 +9,16 @@
 <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
 
+
     <script type="text/javascript">
-      $( '#content' ).scrollFollow();
+     $( document ).ready( function () {
+       $( '#content' ).scrollFollow( {
+        speed: 1000,
+        offset: 60,
+       } );
+     } );
     </script>
+
 
 
  
