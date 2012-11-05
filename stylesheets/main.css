@@ -100,10 +100,6 @@
      border-radius: 25px;
 }
 
-       
-.content #floatDiv {
-        position:absolute;
-    }
 
 .content ul li {
      display: inline;
