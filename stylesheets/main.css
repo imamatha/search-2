@@ -82,7 +82,7 @@
 }
 
 /* Border for content*/
-/*#content{
+#content{
      position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
@@ -97,7 +97,7 @@
      -moz-border-radius: 25px;
      border-radius:25px;
      
-}*/
+}
 
 #content ul li {
      display: inline;
