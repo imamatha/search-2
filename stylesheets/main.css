@@ -70,7 +70,7 @@
 
 /* Border for search-result*/
 .withborder {
-       position: fixed;
+       position: relative;
        border:0px;  
        top:5px;
        left:1px;
