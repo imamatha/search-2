@@ -80,9 +80,21 @@
        border-color: rgb(160,160,160);
        line-height:1;
 }
+#content{
+    width: 130px;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    margin: 0 auto;
+    clear: right;
+    padding: 8px;
+    background: #e5e5e5;
+    border: 2px dashed red;
+    position: fixed;
+    right: 35px;
+}
 
-
-/* Border for content*/
+/* 
 #content{
      position: fixed;
      border:1px solid black;
@@ -108,7 +120,7 @@
      font-family:"Times New Roman";
      font-style:normal;
      font-size:12px;
-}
+}Border for content*/
 /* border for root content*/
 .rootborder{
       margin: 5px;
