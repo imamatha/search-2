@@ -23,16 +23,9 @@
 }
 
 #search-info { 
-  width: 600px; 
-  margin: 15px auto; 
   position: relative; 
 }
 
-#content { 
-  width: 190px; 
-  position: fixed; 
-  margin-left: 410px; 
-}
 
 /* Image positions*/
 .jive-icon-med {
@@ -96,7 +89,7 @@
 
 
 /* Border for content*/
-.content{
+#content{
      position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
@@ -113,7 +106,7 @@
 }
 
 
-.content ul li {
+#content ul li {
      display: inline;
      padding: .1em 2em;
      line-height:12px;
