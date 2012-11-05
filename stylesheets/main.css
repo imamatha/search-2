@@ -22,6 +22,18 @@
      text-decoration:underline;
 }
 
+#search-info { 
+  width: 600px; 
+  margin: 15px auto; 
+  position: relative; 
+}
+
+#content { 
+  width: 190px; 
+  position: fixed; 
+  margin-left: 410px; 
+}
+
 /* Image positions*/
 .jive-icon-med {
      background-image: url('../images/jive-icon-sprites-med.png');
