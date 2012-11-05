@@ -83,17 +83,8 @@
 
 /* Border for content*/
 #content{
-     position: fixed;
-     border:1px solid black;
-     border-color:#A0A0A0;
-     float: right;
-     width:47%;
-     padding:10px;
-     display:inline;
-     -webkit-border-radius:25px;
-     -moz-border-radius: 25px;
-     border-radius: 25px;
-     margin-top: -10px;
+      width: 290px;
+      float: right;
      
 }
 
