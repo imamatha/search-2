@@ -81,6 +81,9 @@
        line-height:1;
 }
  #content {
+     padding-bottom:8000px;
+     margin-bottom:-8000px;
+     background:none repeat scroll 0 0 lightblue;       
      position:absolute;
      min-height: xxpx;
      overflow: visible;
