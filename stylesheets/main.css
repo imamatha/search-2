@@ -81,7 +81,29 @@
        line-height:1;
 }
 
-/* Border for content*/
+#search-info{
+        height:2000px !important;
+        background-color:white;
+        overflow:auto;
+    }
+#search-info #content {
+     position:fixed;
+     border:1px solid black;
+     border-color:#A0A0A0;
+     top:150px;
+     left:50.5%;
+     right:270px;
+     bottom:2px;
+     width:47%;
+     padding:10px;
+     display:inline;
+     -webkit-border-radius:25px;
+     -moz-border-radius: 25px;
+     border-radius:25px;
+    }
+           
+  
+/* 
 #content{
      position:fixed;
      border:1px solid black;
@@ -106,7 +128,7 @@
      font-family:"Times New Roman";
      font-style:normal;
      font-size:12px;
-}
+}Border for content*/
 /* border for root content*/
 .rootborder{
       margin: 5px;
