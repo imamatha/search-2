@@ -1,24 +1,24 @@
-.search-results ul li {
+#search-results ul li {
      display: inline;
      padding: 0 0;
      line-height:10px;
 }
   
-.search-results ul {padding: 0 0;}
+#search-results ul {padding: 0 0;}
 
-.search-results ul li a
+#search-results ul li a
 {
      text-decoration: none;
      padding: 0 0;
 }
 
-.search-results ul li a.nopad {
+#search-results ul li a.nopad {
      text-decoration: none;
      padding: 0 0;
      line-height:10px;
 }
 
-.search-results ul li a:hover{
+#search-results ul li a:hover{
      text-decoration:underline;
 }
 /* Image positions*/
@@ -80,13 +80,7 @@
        border-color: rgb(160,160,160);
        line-height:1;
 }
-
-#search-info{
-        height:2000px !important;
-        background-color:white;
-        overflow:auto;
-    }
-#search-info #content {
+ #content {
      position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
@@ -103,7 +97,7 @@
     }
            
   
-/* 
+/*  border for root content
 #content{
      position:fixed;
      border:1px solid black;
@@ -119,7 +113,7 @@
      -moz-border-radius: 25px;
      border-radius:25px;
      
-}
+}*/
 
 #content ul li {
      display: inline;
@@ -129,7 +123,7 @@
      font-style:normal;
      font-size:12px;
 }Border for content*/
-/* border for root content*/
+/*
 .rootborder{
       margin: 5px;
       padding: 5px;
