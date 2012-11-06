@@ -90,7 +90,6 @@
      bottom:2px;
      width:47%;
      padding:10px;
-     display:inline;
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
      border-radius:25px;
@@ -123,7 +122,6 @@
      font-style:normal;
      font-size:12px;
 }
-/*
 .rootborder{
       margin: 5px;
       padding: 5px;
