@@ -461,7 +461,7 @@ function search() {
                            }
                
                //checks for document,if document displays all the documents in searchresult
-			 if(row.type=="document1")
+			 if(row.type=="document")
                            {
 				var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
 				
