@@ -81,8 +81,7 @@
        line-height:1;
 }
  #content {
-     padding-bottom:2000px;
-     background:repeat scroll 0 0 lightblue;       
+     padding-bottom:2000px;   
      position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
@@ -91,10 +90,16 @@
      right:270px;
      bottom:2px;
      width:47%;
-     padding:10px;
+     /*padding:10px;*/
      -webkit-border-radius:25px;
      -moz-border-radius: 25px;
      border-radius:25px;
+     padding: 0;
+     margin: 0;
+     background-color: #292929;
+     width: 1200px;
+     margin: 0 auto;
+     min-height: 100%;
     }
            
   
