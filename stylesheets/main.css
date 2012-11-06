@@ -82,17 +82,14 @@
 }
  #content {
      padding-bottom:2000px;
-     margin-bottom:-2000px;
      background:repeat scroll 0 0 lightblue;       
-     position:absolute;
-     min-height: xxpx;
-     overflow: visible;
+     position:fixed;
      border:1px solid black;
      border-color:#A0A0A0;
      top:150px;
      left:50.5%;
      right:270px;
-    bottom:2px;
+     bottom:2px;
      width:47%;
      padding:10px;
      -webkit-border-radius:25px;
