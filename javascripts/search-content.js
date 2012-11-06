@@ -26,8 +26,7 @@ function init() {
 //			}
 //		);
       
-$(function() {
-    $('.rootborder').autosize();});
+
 //onhover event of expand icon
 $("span.image-button").live('mouseover', function () {
                 var curRowId = $(this).attr("id");
