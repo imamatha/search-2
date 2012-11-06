@@ -54,25 +54,7 @@ $("span.image-button").live('mouseover', function () {
          $( "#tabs" ).tabs();
         
  });
- $(document).ready(function(){
- 
-         //on window scroll fire it will call a function.
- 
-                $(window).scroll(function () {
- 
-         //after window scroll fire it will add define pixel added to that element.
- 
-                    set = $(document).scrollTop()+"px";
- 
-        //this is the jQuery animate function to fixed the div position after scrolling.
-                    $('#content').animate({top:set},{duration:1000,queue:false});
- 
-                });
- 
-            });
- 
 
-   
 //function for date format
  function monthConvert(d){
 
@@ -371,7 +353,7 @@ function search() {
 	    var blog="";
 	    var discussion="";
 	    var update="";
-	    var document1="";
+	    var document="";
 	    var post="";
 				
             var rows = response.data;
@@ -483,30 +465,30 @@ function search() {
                            {
 				var docID = (url.substring(url.lastIndexOf("-"))).substr(1);
 				
-                    		document1 +='<div id="div_'+docID+'" class="firstdiv"> ';
-				document1 +='<ul>';
-                    		document1 +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
-                    		document1 +='</ul>';
-                    		document1 +='<ul>';
-				document1 +='<span class="jive-icon-med image-button" id="DOC-'+docID+'" ></span>';
-                    		document1 +='</ul>';
+                    		document +='<div id="div_'+docID+'" class="firstdiv"> ';
+				document +='<ul>';
+                    		document +='<span class="jive-icon-med jive-icon-document"></span><li> <a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                    		document +='</ul>';
+                    		document +='<ul>';
+				document +='<span class="jive-icon-med image-button" id="DOC-'+docID+'" ></span>';
+                    		document +='</ul>';
                     
-				document1 +='<div class="root1">'; 
-                    		document1 +='<ul>';
-                   		document1 +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-				document1 +='&nbsp;&nbsp<li>Date:'+newDate+'</li>';                  
-                    		document1 +='&nbsp;&nbsp<li>Replies:'+replyCount+'</li>';
-                   	 	document1 +='</ul>';
-                    		document1 +='</div>';
+				document +='<div class="root1">'; 
+                    		document +='<ul>';
+                   		document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+				document +='&nbsp;&nbsp<li>Date:'+newDate+'</li>';                  
+                    		document +='&nbsp;&nbsp<li>Replies:'+replyCount+'</li>';
+                   	 	document +='</ul>';
+                    		document +='</div>';
 					
-				document1 +='<div class="root">';
-                    		document1 +='<ul>';                    
-                    		document1 +='<div>'+contentSummary+'</div>';                   
-                    		document1 +='</ul>';
-				document1 +='</div>';
+				document +='<div class="root">';
+                    		document +='<ul>';                    
+                    		document +='<div>'+contentSummary+'</div>';                   
+                    		document +='</ul>';
+				document +='</div>';
                                        
-                    		document1 +='</div>';
-                    		document1 +='<br>';
+                    		document +='</div>';
+                    		document +='<br>';
                     		
                       
                           }
@@ -548,7 +530,7 @@ function search() {
             });  
 
 	      all1 +=discussion;   
-	      all2 +=document1;	 
+	      all2 +=document;	 
 	      all3 +=post;
 	     
              all +=all1+all2+all3;
